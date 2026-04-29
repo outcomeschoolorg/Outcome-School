@@ -201,6 +201,81 @@
   margin-left: 20px;
   text-align: left;
 }
+
+@media (max-width: 768px) {
+
+  /* Stack the whole layout */
+  .career-pathway-container {
+    flex-direction: column;
+    margin: 10px;
+  }
+
+  .career-wrapper {
+    border-left: none;
+    padding: 0;
+  }
+
+  /* Start timeline → stack instead of horizontal */
+  .start-timeline-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .start-timeline-item {
+    margin-right: 0;
+    margin-bottom: 25px;
+    width: 100%;
+  }
+
+  /* REMOVE arrows on mobile (they look broken stacked) */
+
+  .start-timeline-item::after,
+  .timeline-item::after {
+    display: block;              /* re-enable */
+    content: '↓';                /* downward arrow */
+    position: absolute;
+    right: auto;
+    left: 50%;
+    top: auto;
+    bottom: -20px;
+    margin-bottom: -8px;
+    transform: translateX(-50%);
+    font-size: 24px;
+    color: #7C33FF;
+  }
+
+  .CareerPathway-header-container::after {
+    display: none;
+  }
+
+  /* Timeline becomes vertical */
+  .CareerPathway-timeline {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .timeline-item {
+    margin-right: 0;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  /* Headers smaller + better spacing */
+  .CareerPathway-header {
+    font-size: 18px;
+    margin-left: 10px;
+  }
+
+  .career-pathways-header {
+    font-size: 22px;
+  }
+
+  /* Prevent sideways scrolling */
+  .CareerPathway-timeline-container,
+  .start-timeline-container {
+    overflow-x: hidden;
+  }
+}
 /* Career Pathway End*/
 
 
