@@ -1,0 +1,45 @@
+
+.background{
+    background-color: #7C33FF;
+}
+
+.text{
+    color: #7C33FF;
+}
+
+
+/* FAQ list styling */
+.faq-answer ul {
+    list-style-type: disc;
+    margin-left: 1.25rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.faq-answer li {
+    margin-bottom: 0.25rem;
+    color: #6b7280; /* gray-500 */
+}
+
+.faq-answer li::marker {
+    color: #7C33FF;
+}
+
+/* Add this to your CSS file */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 20s linear infinite;
+}
+
+/* Optional: Pause on hover */
+.animate-marquee:hover {
+  animation-play-state: paused;
+}

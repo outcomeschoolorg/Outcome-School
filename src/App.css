@@ -1,0 +1,206 @@
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none; 
+  scrollbar-width: none;
+}
+
+/* Career Pathway Start*/
+.main-container{
+    background-color: rgb(244, 241, 241);
+    align-items: center;
+}
+
+.career-pathways-header {
+  text-align: center;
+  font-weight: bold;
+  font-size: 28px;
+  margin: 20px 0;
+  color: black; 
+}
+.CareerPathway-timeline-container{
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.3s ease, max-height 0.3s ease;
+  pointer-events: none; 
+}
+.CareerPathway-header-container{
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px 10px rgba(0, 0, 0, 0.1);
+  margin: 6px;
+  padding: 6px;
+  text-align: center;
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: slideIn 0.5s forwards;
+  animation-delay: var(--animation-delay);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s, color 0.3s;
+}
+
+.CareerPathway-header-container::after {
+  content: '→';
+  position: absolute;
+  left: -17px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  color: #7C33FF;
+}
+
+.CareerPathway-timeline-container,
+.CareerPathway-timeline-container .CareerPathway-timeline {
+  opacity: 1;
+  max-height: 500px;
+  pointer-events: auto;
+}
+
+.career-pathway-container {
+  display: flex;
+  flex-direction: row; 
+  align-items: left;  
+  margin: 30px;
+  padding: 10px
+}
+
+.start-timeline-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+}
+
+.start-timeline-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  padding: 20px
+}
+
+.start-timeline-item, .timeline-item{
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  margin-right: 50px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px 10px rgba(0, 0, 0, 0.1);
+  padding: 5px;
+  text-align: center;
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: slideIn 0.5s forwards;
+  animation-delay: var(--animation-delay);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s, color 0.3s;
+
+}
+
+.start-timeline-item::after {
+  content: '→';
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  color: #7C33FF;
+}
+
+.career-wrapper {
+  display: flex;
+  align-items: flex-start; 
+  padding: 10px; 
+  border-left: 1px solid #7C33FF
+}
+
+.right-content {
+  flex: 1;
+  width: auto; 
+  min-height: 100%;
+}
+
+
+.pathway-row {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+}
+
+
+.start-timeline-container {
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+}
+
+.CareerPathway-timeline-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: auto;
+}
+
+.CareerPathway-timeline {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  position: relative;
+  padding: 10px;
+}
+
+.timeline-item::after {
+  content: '→';
+  position: absolute;
+  right: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  color: #7C33FF;
+}
+
+.timeline-item:last-child::after {
+  display: none;
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.timeline-item:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  background-color: #7C33FF;
+  color: white;
+  cursor: pointer;
+}
+
+.timeline-item:hover .item-text {
+  color: white;
+  font-weight: bold;
+}
+
+.timeline-content {
+  font-size: 16px;
+  color: #7C33FF;
+}
+
+.timeline-content strong {
+  font-size: 18px;
+}
+
+.CareerPathway-header {
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 20px 0;
+  margin-left: 20px;
+  text-align: left;
+}
+/* Career Pathway End*/
+
+
