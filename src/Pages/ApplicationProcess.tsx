@@ -153,6 +153,71 @@ const ApplicationProcess = () => {
               ))}
             </div>
           </div>
+          {/* Step-by-Step */}
+          <div className="py-10">
+            <div className="flex flex-col lg:flex-row items-center gap-4">
+              {/* Previous Step */}
+              <button
+                onClick={handlePrevStep}
+                disabled={currentStep === 0}
+                className={`w-10 h-10 rounded-full flex items-center justify-center transition-all ${
+                  currentStep === 0
+                    ? "bg-gray-200 text-gray-400 cursor-not-allowed"
+                    : "bg-purple-600 text-white hover:bg-purple-700 cursor-pointer"
+                }`}
+              >
+                <i className="fa-solid fa-less-than"></i>
+              </button>
+
+              {/* Step Image */}
+              <img
+                src={currentStepData.image}
+                alt={`Step ${currentStepData.id}`}
+                className="w-100"
+              />
+
+              {/* Step Content */}
+              <div className="flex-1">
+                <p className="text-[23px] my-3 font-bold text-gray-900">
+                  Step {currentStepData.id}
+                </p>
+                <p className="my-3 text-lg font-semibold text-gray-800">
+                  {currentStepData.title}
+                </p>
+                <p className="my-3 lg:w-[80%] text-gray-600 leading-relaxed">
+                  {currentStepData.description}
+                </p>
+              </div>
+
+              {/* Next Step */}
+              <button
+                onClick={handleNextStep}
+                disabled={currentStep === steps.length - 1}
+                className={`w-10 h-10 rounded-full flex items-center justify-center transition-all ${
+                  currentStep === steps.length - 1
+                    ? "bg-gray-200 text-gray-400 cursor-not-allowed"
+                    : "bg-purple-600 text-white hover:bg-purple-700 cursor-pointer"
+                }`}
+              >
+                <i className="fa-solid fa-greater-than"></i>
+              </button>
+            </div>
+
+            {/* Progress Indicators */}
+            <div className="flex justify-center gap-2 mt-8">
+              {steps.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrentStep(index)}
+                  className={`w-2 h-2 rounded-full transition-all ${
+                    currentStep === index
+                      ? "bg-purple-600 w-6"
+                      : "bg-gray-300 hover:bg-gray-400"
+                  }`}
+                />
+              ))}
+            </div>
+          </div>
         </div>
       </div>
       <div className="flex justify-center mt-3 mb-5">
