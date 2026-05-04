@@ -111,16 +111,16 @@ const ApplicationProcess = () => {
               <div className="mb-3">
                 <p className="text-start text-[32px] font-bold">Summer 2026</p>
                 <p className="text-[18px] my-3">
-                  Application Deadline: 3 weeks before the program start date
+                  Application Deadline: 2 weeks before the program start date
                 </p>
                 <p className="text-[18px] my-3">
-                  Pre-work Deadline: 2 weeks before the start date
+                  Pre-work Deadline: 1 weeks before the start date
                 </p>
                 <p className="text-[18px] my-3">
                   Results Date: 3 days after your pre-work submission
                 </p>
                 <p className="text-[18px] my-3">
-                  Class date: June 1st, 2026 - August 23rd, 2026
+                  Class date: July 2nd, 2026 - September 23rd, 2026
                 </p>
               </div>
             </div>
