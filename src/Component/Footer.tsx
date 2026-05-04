@@ -17,9 +17,24 @@ const Footer = () => {
             <p className="text-white text-[16px] font-medium lg:w-[40%]">
               Welcome to Outcome School, where every lesson is a bridge to
               opportunity and every learner is empowered to build, innovate, and
-              transform communities. <br/>
-              "Outcome School is a 501(c)(3) nonprofit organization. <Link to="/donate" className="font-bold hover:underline hover:font-extrabold"> Donate</Link>  
-              &nbsp; or <Link to="/volunteer-form" className="font-bold hover:underline hover:font-extrabold"> volunteer</Link> today!"
+              transform communities. <br />
+              "Outcome School is a 501(c)(3) nonprofit organization.{" "}
+              <Link
+                to="/donate"
+                className="font-bold hover:underline hover:font-extrabold"
+              >
+                {" "}
+                Donate
+              </Link>
+              &nbsp; or{" "}
+              <Link
+                to="/volunteer-form"
+                className="font-bold hover:underline hover:font-extrabold"
+              >
+                {" "}
+                volunteer
+              </Link>{" "}
+              today!"
             </p>
           </div>
 
@@ -55,11 +70,11 @@ const Footer = () => {
               </ul>
             </div>
 
-            <div className='text-white'>
-              <h1 className='text-[18px] font-semibold'>Volunteer</h1>
-              <ul className='text-white my-3'>
+            <div className="text-white">
+              <h1 className="text-[18px] font-semibold">Volunteer</h1>
+              <ul className="text-white my-3">
                 <Link to="/volunteer-form">
-                  <li className='hover:underline duration-300 my-2 ease-in-out text-white cursor-pointer'>
+                  <li className="hover:underline duration-300 my-2 ease-in-out text-white cursor-pointer">
                     Become a Volunteer
                   </li>
                 </Link>
@@ -97,11 +112,11 @@ const Footer = () => {
               </ul>
             </div>
 
-            <div className='text-white'>
-              <h1 className='text-[18px] font-semibold'>About Us</h1>
-              <ul className='text-white my-3'>
+            <div className="text-white">
+              <h1 className="text-[18px] font-semibold">About Us</h1>
+              <ul className="text-white my-3">
                 <Link to="/aboutUs">
-                  <li className='hover:underline duration-300 my-2 ease-in-out text-white cursor-pointer'>
+                  <li className="hover:underline duration-300 my-2 ease-in-out text-white cursor-pointer">
                     About Outcome School
                   </li>
                 </Link>
@@ -128,6 +143,11 @@ const Footer = () => {
                 <Link to="/contact">
                   <li className="hover:underline duration-300  my-2 ease-in-out text-[16px] text-white cursor-pointer">
                     Contact Us
+                  </li>
+                </Link>
+                <Link to="/our-partners">
+                  <li className="hover:underline duration-300  my-2 ease-in-out text-[16px] text-white cursor-pointer">
+                    Our Partners
                   </li>
                 </Link>
               </ul>
