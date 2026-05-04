@@ -380,6 +380,13 @@ const NavBar: React.FC = () => {
               >
                 Contact Us
               </Link>
+              <Link
+                to="/our-partners"
+                className="block px-6 py-3 hover:bg-gray-200"
+                onClick={() => setIsOpen(false)}
+              >
+                Our Partners
+              </Link>
             </div>
           )}
 
