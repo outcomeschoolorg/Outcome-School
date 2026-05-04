@@ -176,6 +176,12 @@ const NavBar: React.FC = () => {
                 >
                   Contact Us
                 </Link>
+                <Link
+                  to="/our-partners"
+                  className="block px-4 py-2 bg-white hover:bg-gray-200 "
+                >
+                  Our Partners
+                </Link>
               </div>
             )}
           </div>
