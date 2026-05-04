@@ -65,6 +65,7 @@ import RoboticsLevel6 from "./Pages/CoursesDescription/Robotics/level6";
 
 import BlogEventsDetails from "./Pages/BlogEventsDetails";
 import CompanyPolicies from "./Pages/CompanyPolicies";
+import OurPartners from "./Pages/OurPartners";
 const App = () => {
   return (
     <>
@@ -188,6 +189,7 @@ const App = () => {
           <Route path="/robotics-level4" element={<RoboticsLevel4 />} />
           <Route path="/robotics-level5" element={<RoboticsLevel5 />} />
           <Route path="/robotics-level6" element={<RoboticsLevel6 />} />
+          <Route path="/our-partners" element={<OurPartners />} />
         </Routes>
       </Router>
 
