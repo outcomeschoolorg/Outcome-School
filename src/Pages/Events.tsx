@@ -2,8 +2,42 @@ import { Link } from "react-router";
 import Footer from "../Component/Footer";
 import NavBar from "../Component/NavBar";
 import { events } from "../data/events";
+import { useState } from "react";
 
 const Events = () => {
+  const [filter, setFilter] = useState("all");
+  const normalize = (date: string | Date): Date => {
+    const d = new Date(date);
+    d.setHours(0, 0, 0, 0);
+    return d;
+  };
+  const today = normalize(new Date().toISOString());
+
+  const filteredEvents = events.filter((event) => {
+    const eventDate = new Date(event.date);
+
+    switch (filter) {
+      case "past":
+        return eventDate < today;
+
+      case "upcoming":
+        return eventDate >= today;
+
+      case "next7":
+        const next7 = new Date();
+        next7.setDate(today.getDate() + 7);
+        return eventDate >= today && eventDate <= next7;
+
+      case "next30":
+        const next30 = new Date();
+        next30.setDate(today.getDate() + 30);
+        return eventDate >= today && eventDate <= next30;
+
+      default:
+        return true;
+    }
+  });
+
   return (
     <>
       <NavBar />
@@ -18,12 +52,36 @@ const Events = () => {
               career development event. All for free.
             </p>
           </div>
+          <div className="flex flex-wrap gap-3 mb-5">
+            <button
+              onClick={() => setFilter("past")}
+              className="bg-[#6036E1] font-semibold border-2 border-[#6036E1] text-white rounded-[999px] hover:shadow-2xl hover:shadow-[#6036E1] px-4 py-3 hover:text-[#6036E1] hover:bg-white"
+            >
+              Past
+            </button>
+            <button
+              onClick={() => setFilter("upcoming")}
+              className="bg-[#6036E1] font-semibold border-2 border-[#6036E1] text-white rounded-[999px] hover:shadow-2xl hover:shadow-[#6036E1] px-4 py-3 hover:text-[#6036E1] hover:bg-white"
+            >
+              Upcoming
+            </button>
+            <button
+              onClick={() => setFilter("next7")}
+              className="bg-[#6036E1] font-semibold border-2 border-[#6036E1] text-white rounded-[999px] hover:shadow-2xl hover:shadow-[#6036E1] px-4 py-3 hover:text-[#6036E1] hover:bg-white"
+            >
+              Next 7 days
+            </button>
+            <button
+              onClick={() => setFilter("next30")}
+              className="bg-[#6036E1] font-semibold border-2 border-[#6036E1] text-white rounded-[999px] hover:shadow-2xl hover:shadow-[#6036E1] px-4 py-3 hover:text-[#6036E1] hover:bg-white"
+            >
+              Next 30 days
+            </button>
+          </div>
 
           {/* EVENTS LIST */}
           <div>
-            <p className="mb-5 text-[28px] font-bold">Upcoming Events</p>
-
-            {events.map((event, index) => (
+            {filteredEvents.map((event, index) => (
               <Link
                 key={event.title}
                 to={`/event-details/${index}`}
@@ -96,5 +154,4 @@ const Events = () => {
     </>
   );
 };
-
 export default Events;
