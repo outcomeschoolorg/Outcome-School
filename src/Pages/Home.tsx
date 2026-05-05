@@ -52,10 +52,9 @@ const Home = () => {
       <div className="bg-white">
         <div className="container px-4 sm:px-6 lg:px-10 mx-auto items-center flex flex-col md:flex-row gap-10 min-h-screen ">
           <div className="md:w-1/2 text-white items-center justify-center ">
-            <p className="text-4xl sm:text-5xl lg:text-[64px] font-medium uppercase leading-tight">
+            <p className="text-4xl sm:text-5xl lg:text-[64px] font-medium uppercase text-gray-300 leading-tight mb-6">
               Learn
             </p>
-
             <p className="text-4xl sm:text-5xl lg:text-[64px] font-medium uppercase text-gray-300 leading-tight mb-6">
               By Doing
             </p>
