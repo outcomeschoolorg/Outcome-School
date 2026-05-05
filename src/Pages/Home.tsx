@@ -103,20 +103,25 @@ const Home = () => {
       <div className="bg-[#8080801A]">
         <div className="container   mx-auto py-10">
           <div className="flex flex-col lg:flex-row gap-6 items-center justify-center w-full">
-            <Link to="/donate">
-              <div className="bg-[#8A38F5] rounded-[25px] h-[170px] lg:h-[350px] w-full max-w-[320px] items-center pr-4 pt-4">
-                <i className="fa-solid fa-arrow-up text-white float-right rotate-45 translate-y-1"></i>
-                <img src={icon} alt="icon" className="mx-auto mt-5 lg:mt-20" />
-                <p className="text-white text-center text-[28px] font-bold">
-                  Donate
-                </p>
+            <div className="flex flex-col gap-10 lg:flex-row lg:gap-10 mt-10 mx-auto items-center">
+              <div>
+                <Link to="/donate">
+                  <div className="bg-[#8A38F5] rounded-[25px] h-[170px] lg:h-[350px] lg:w-[300px] w-full max-w-[320px] items-center pr-4 pt-4">
+                    <i className="fa-solid fa-arrow-up text-white float-right rotate-45 translate-y-1"></i>
+                    <img
+                      src={icon}
+                      alt="icon"
+                      className="mx-auto mt-5 lg:mt-20"
+                    />
+                    <p className="text-white text-center text-[28px] font-bold">
+                      Donate
+                    </p>
+                  </div>
+                </Link>
               </div>
-            </Link>
-
-            <div className="flex flex-col lg:flex-row lg:gap-10 mt-10 mx-auto items-center">
               <div>
                 <Link to="/tech-school">
-                  <div className="bg-[#8A38F5] mb-5  rounded-[25px] h-[170px] w-full max-w-[320px] items-center  pr-4 pt-4">
+                  <div className="bg-[#8A38F5] mb-5  rounded-[25px] h-[170px] lg:w-[300px] w-full max-w-[320px] items-center  pr-4 pt-4">
                     <i className="fa-solid fa-arrow-up text-white float-right rotate-45 translate-y-1"></i>
                     <img src={acquire} alt="icon" className="mx-auto mt-5" />
                     <p className="text-white text-center text-[28px] font-bold">
@@ -138,7 +143,7 @@ const Home = () => {
 
               <div className="">
                 <Link to="/employer-partnerships">
-                  <div className="bg-[#8A38F5] mb-5 rounded-[25px] h-[170px] w-full max-w-[320px] items-center  pr-4 pt-4">
+                  <div className="bg-[#8A38F5] mb-5 rounded-[25px] h-[170px] lg:w-[300px] w-full max-w-[320px] items-center  pr-4 pt-4">
                     <i className="fa-solid fa-arrow-up text-white float-right rotate-45 translate-y-1"></i>
                     <img src={employ} alt="icon" className="mx-auto mt-5" />
                     <p className="text-white text-center text-[28px] font-bold">
@@ -160,7 +165,7 @@ const Home = () => {
               </div>
               <div>
                 <a href="#blog">
-                  <div className="bg-[#8A38F5] mb-5  rounded-[25px] h-[170px] w-full max-w-[320px] items-center  pr-4 pt-4">
+                  <div className="bg-[#8A38F5] mb-5  rounded-[25px] h-[170px] lg:w-[300px] w-full max-w-[320px] items-center  pr-4 pt-4">
                     <i className="fa-solid fa-arrow-up text-white float-right rotate-45 translate-y-1"></i>
                     <img src={blogs} alt="icon" className="mx-auto mt-5" />
                     <p className="text-white text-center text-[28px] font-bold">
