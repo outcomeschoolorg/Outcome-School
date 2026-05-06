@@ -4,6 +4,7 @@ import blog from "../assets/images/blog.jpg";
 import htmlevent from "../assets/images/HTML-CSS.png";
 import UIevent from "../assets/images/UI-UX.png";
 import { Link } from "react-router-dom";
+import FreeTechSchool from "../assets/images/FreeTechSchool.png";
 
 interface BlogItem {
   type: "card" | "iframe";
@@ -35,10 +36,8 @@ const items: BlogItem[] = [
   {
     id: 2,
     type: "card",
-    title: "Blog Event",
     date: "April 9, 2026",
     image: blog,
-    description: "General blog event and updates.",
   },
   {
     type: "iframe",
@@ -52,10 +51,25 @@ const items: BlogItem[] = [
     type: "iframe",
     src: "urn:li:ugcPost:7445504594341752834",
   },
+  {
+    type: "card",
+    image: FreeTechSchool,
+    date: "May 2026",
+    src: "https://medium.com/@outcomeschoolorg/outcome-school-partners-with-grow-with-google-to-bring-free-digital-skills-training-to-underserved-cb8ba1ed43af",
+  },
 ];
 
 const MixedCarousel = () => {
   const scrollRef = useRef<HTMLDivElement>(null);
+
+  const parseDate = (date?: string) => {
+    if (!date) return new Date(0); // fallback for iframes
+    if (/^[A-Za-z]+ \d{4}$/.test(date)) {
+      return new Date(`1 ${date}`);
+    }
+
+    return new Date(date);
+  };
 
   const scroll = (direction: "left" | "right") => {
     if (scrollRef.current) {
@@ -77,7 +91,7 @@ const MixedCarousel = () => {
 
         {/* arrows */}
         <div className="flex flex-row gap-5 my-5 justify-end">
-        {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 my-5 text-center mx-auto items-center"> */}
+          {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 my-5 text-center mx-auto items-center"> */}
           <i
             onClick={() => scroll("left")}
             className="fa-solid fa-arrow-left border bg-white py-3 px-3 rounded-[12px] cursor-pointer hover:bg-[#7C33FF] hover:text-white"
@@ -94,52 +108,57 @@ const MixedCarousel = () => {
           ref={scrollRef}
           className="flex gap-6 overflow-x-auto overflow-y-hidden scroll-smooth mt-10 pb-4 hide-scrollbar"
         >
-          {items.map((item, index) => {
-            const content =
-              item.type === "card" ? (
-                <>
-                  {item.date && (
-                    <time className="inline-block px-3 py-3 mt-2 ml-2 text-s font-medium text-gray-700  rounded-full">
-                     &nbsp;&nbsp; {item.date}
-                    </time>
-                  )}
-
-                  {item.image && (
-                    <img
-                      src={item.image}
-                      alt={item.title}
-                      className="w-full min-h-[350px] max-h-[325px] object-cover rounded-md mb-2"
-                    />
-                  )}
-
-                  <div className="p-4 flex-1 flex flex-col justify-between overflow-hidden">
-                    {item.title && (
-                      <h3 className="font-bold text-lg text-center py-3 px-4 break-words text-gray-700 bg-gray-100 rounded-full">
-                        {item.title}
-                      </h3>
+          {[...items]
+            .sort(
+              (a, b) =>
+                parseDate(b.date).getTime() - parseDate(a.date).getTime(),
+            )
+            .map((item, index) => {
+              const content =
+                item.type === "card" ? (
+                  <>
+                    {item.date && (
+                      <time className="inline-block px-3 py-3 mt-2 ml-2 text-s font-medium text-gray-700  rounded-full">
+                        &nbsp;&nbsp; {item.date}
+                      </time>
                     )}
 
-                    {item.description && (
-                      <p className="text-gray-600 text-sm break-words overflow-hidden">
-                        {item.description}
-                      </p>
+                    {item.image && (
+                      <img
+                        src={item.image}
+                        alt={item.title}
+                        className="w-full min-h-[350px] max-h-[450px] object-cover rounded-md mb-2"
+                      />
                     )}
-                  </div>
-                </>
-              ) : (
-                <iframe
-                  src={`https://www.linkedin.com/embed/feed/update/${item.src}?collapsed=1`}
-                  className="w-full h-full rounded-[10px]"
-                  frameBorder="0"
-                  allowFullScreen
-                  title={`iframe-${index}`}
-                />
-              );
 
-            return (
-              <div
-                key={index}
-                className="
+                    <div className="p-4 flex-1 flex flex-col justify-between overflow-hidden">
+                      {item.title && (
+                        <h3 className="font-bold text-lg text-center py-3 px-4 break-words text-gray-700 bg-gray-100 rounded-full">
+                          {item.title}
+                        </h3>
+                      )}
+
+                      {item.description && (
+                        <p className="text-gray-600 text-sm break-words overflow-hidden">
+                          {item.description}
+                        </p>
+                      )}
+                    </div>
+                  </>
+                ) : (
+                  <iframe
+                    src={`https://www.linkedin.com/embed/feed/update/${item.src}?collapsed=1`}
+                    className="w-full h-full rounded-[10px]"
+                    frameBorder="0"
+                    allowFullScreen
+                    title={`iframe-${index}`}
+                  />
+                );
+
+              return (
+                <div
+                  key={index}
+                  className="
                   flex-shrink-0 w-[404px] h-[610px]
                   rounded-[10px] border-4 border-[#7C33FF]
                   bg-white shadow-md overflow-hidden flex flex-col
@@ -147,20 +166,20 @@ const MixedCarousel = () => {
                   hover:scale-102 hover:shadow-lg hover:border-white
                   cursor-pointer
                 "
-              >
-                {item.type === "card" ? (
-                  <Link
-                    to={`/events/${item.id}`}
-                    className="h-full flex flex-col"
-                  >
-                    {content}
-                  </Link>
-                ) : (
-                  content
-                )}
-              </div>
-            );
-          })}
+                >
+                  {item.type === "card" ? (
+                    <Link
+                      to={`/events/${item.id}`}
+                      className="h-full flex flex-col"
+                    >
+                      {content}
+                    </Link>
+                  ) : (
+                    content
+                  )}
+                </div>
+              );
+            })}
         </div>
       </div>
     </div>
