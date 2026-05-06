@@ -168,12 +168,23 @@ const MixedCarousel = () => {
                 "
                 >
                   {item.type === "card" ? (
-                    <Link
-                      to={`/events/${item.id}`}
-                      className="h-full flex flex-col"
-                    >
-                      {content}
-                    </Link>
+                    item.src ? (
+                      <a
+                        href={item.src}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="h-full flex flex-col w-full"
+                      >
+                        {content}
+                      </a>
+                    ) : (
+                      <Link
+                        to={`/events/${item.id}`}
+                        className="h-full flex flex-col w-full"
+                      >
+                        {content}
+                      </Link>
+                    )
                   ) : (
                     content
                   )}
