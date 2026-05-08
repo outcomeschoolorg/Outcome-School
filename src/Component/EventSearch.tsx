@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useMemo, useState, useRef, useEffect } from "react";
 
 type EventSearchProps = {
   eventName: string;
@@ -52,6 +52,25 @@ const EventSearch = ({
   const [query, setQuery] = useState("");
   const [open, setOpen] = useState(false);
 
+  const wrapperRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        wrapperRef.current &&
+        !wrapperRef.current.contains(event.target as Node)
+      ) {
+        setOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   const filteredOptions = useMemo(() => {
     return categories.filter((item) =>
       item.toLowerCase().includes(query.toLowerCase()),
@@ -79,7 +98,10 @@ const EventSearch = ({
   return (
     <form className="mb-8">
       <div className="flex flex-col lg:flex-row lg:items-end gap-4">
-        <div className="relative w-full lg:flex-1 min-w-[240px]">
+        <div
+          ref={wrapperRef}
+          className="relative w-full lg:flex-1 min-w-[240px]"
+        >
           <label className="block mb-2 font-semibold text-sm text-gray-700">
             Search Events
           </label>
@@ -94,7 +116,7 @@ const EventSearch = ({
               setOpen(true);
             }}
             onFocus={() => setOpen(true)}
-            className="w-full border border-gray-300 rounded-xl px-4 py-3 outline-none focus:border-[#6036E1] focus:ring-2 focus:ring-[#6036E1]/20 transition"
+            className="w-full border border-[#6036E1] rounded-xl px-4 py-3 outline-none focus:border-[#6036E1] focus:ring-2 focus:ring-[#6036E1]/20 transition"
           />
 
           {/* DROPDOWN */}
@@ -122,7 +144,7 @@ const EventSearch = ({
           <select
             value={location}
             onChange={(e) => setLocation(e.target.value)}
-            className="w-full border border-gray-300 rounded-xl px-4 py-3 outline-none focus:border-[#6036E1] focus:ring-2 focus:ring-[#6036E1]/20"
+            className="w-full border border-[#6036E1] rounded-xl px-4 py-3 outline-none focus:border-[#6036E1] focus:ring-2 focus:ring-[#6036E1]/20"
           >
             <option value="">All Locations</option>
             {usCities.map((city) => (

@@ -2,7 +2,7 @@ import { Link } from "react-router";
 import Footer from "../Component/Footer";
 import NavBar from "../Component/NavBar";
 import { events } from "../data/events";
-import { useState } from "react";
+import { useMemo, useState, useRef, useEffect } from "react";
 import EventSearch from "../Component/EventSearch";
 
 const Events = () => {
