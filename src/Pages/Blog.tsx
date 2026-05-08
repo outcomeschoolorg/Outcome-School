@@ -42,8 +42,9 @@ const items: BlogItem[] = [
   },
   {
     type: "card",
+    tag: ["Social Impact", "Youth Empowerment", "Education Access"],
     image: "Flyers",
-    date: "May 2026",
+    month: "May 2026",
     src: "https://medium.com/@outcomeschoolorg/outcome-school-joins-cisco-networking-academy-expanding-tech-access-for-youth-f123a5f61b33",
   },
 ];
