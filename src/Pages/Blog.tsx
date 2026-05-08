@@ -36,14 +36,14 @@ const items: BlogItem[] = [
   {
     type: "card",
     tag: ["Social Impact", "Youth Empowerment", "Education Access"],
-    image: "FreeTechSchool",
+    image: FreeTechSchool,
     month: "May 2026",
     src: "https://medium.com/@outcomeschoolorg/outcome-school-partners-with-grow-with-google-to-bring-free-digital-skills-training-to-underserved-cb8ba1ed43af",
   },
   {
     type: "card",
     tag: ["Social Impact", "Youth Empowerment", "Education Access"],
-    image: "Flyers",
+    image: Flyers,
     month: "May 2026",
     src: "https://medium.com/@outcomeschoolorg/outcome-school-joins-cisco-networking-academy-expanding-tech-access-for-youth-f123a5f61b33",
   },
@@ -103,7 +103,7 @@ const Blog = () => {
                           >
                             <div className="w-full h-full flex items-center justify-center">
                               <img
-                                src={FreeTechSchool}
+                                src={item.image}
                                 alt="Blog"
                                 className="max-h-[100%] max-w-[100%] object-contain rounded-[10px]"
                               />
