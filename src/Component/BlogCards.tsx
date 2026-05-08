@@ -5,6 +5,7 @@ import htmlevent from "../assets/images/HTML-CSS.png";
 import UIevent from "../assets/images/UI-UX.png";
 import { Link } from "react-router-dom";
 import FreeTechSchool from "../assets/images/FreeTechSchool.png";
+import Flyers from "../assets/images/Flyers.png";
 
 interface BlogItem {
   type: "card" | "iframe";
@@ -17,14 +18,6 @@ interface BlogItem {
 }
 
 const items: BlogItem[] = [
-  {
-    id: 0,
-    type: "card",
-    title: "Product Demo (HTML/CSS Graduation Event)",
-    date: "May 7, 2026",
-    image: htmlevent,
-    description: "Final HTML/CSS project showcase.",
-  },
   {
     id: 1,
     type: "card",
@@ -56,6 +49,20 @@ const items: BlogItem[] = [
     image: FreeTechSchool,
     date: "May 2026",
     src: "https://medium.com/@outcomeschoolorg/outcome-school-partners-with-grow-with-google-to-bring-free-digital-skills-training-to-underserved-cb8ba1ed43af",
+  },
+  {
+    type: "card",
+    image: Flyers,
+    date: "May 2026",
+    src: "https://medium.com/@outcomeschoolorg/outcome-school-joins-cisco-networking-academy-expanding-tech-access-for-youth-f123a5f61b33",
+  },
+  {
+    id: 0,
+    type: "card",
+    title: "Product Demo (HTML/CSS Graduation Event)",
+    date: "",
+    image: htmlevent,
+    description: "Final HTML/CSS project showcase.",
   },
 ];
 

@@ -1,6 +1,7 @@
 import Footer from "../Component/Footer";
 import NavBar from "../Component/NavBar";
 import FreeTechSchool from "../assets/images/FreeTechSchool.png";
+import Flyers from "../assets/images/Flyers.png";
 
 interface BlogItem {
   type: "card" | "iframe";
@@ -38,6 +39,12 @@ const items: BlogItem[] = [
     image: "FreeTechSchool",
     month: "May 2026",
     src: "https://medium.com/@outcomeschoolorg/outcome-school-partners-with-grow-with-google-to-bring-free-digital-skills-training-to-underserved-cb8ba1ed43af",
+  },
+  {
+    type: "card",
+    image: "Flyers",
+    date: "May 2026",
+    src: "https://medium.com/@outcomeschoolorg/outcome-school-joins-cisco-networking-academy-expanding-tech-access-for-youth-f123a5f61b33",
   },
 ];
 
