@@ -422,21 +422,21 @@ const TraineeProject = () => {
                   </div>
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-5 mb-8">
                     <img
+                      src={sunshineKitchen3}
+                      alt="sunshineKitchen3"
+                      onClick={() => setSelectedImage(sunshineKitchen3)}
+                      className="w-full rounded-lg shadow-md object-cover cursor-pointer hover:scale-105 transition"
+                    />
+                    <img
                       src={sunshineKitchen1}
-                      alt="CBT image 1"
-                      onClick={() => setSelectedImage(cbt)}
+                      alt="sunshineKitchen1"
+                      onClick={() => setSelectedImage(sunshineKitchen1)}
                       className="w-full rounded-lg shadow-md object-cover cursor-pointer hover:scale-105 transition"
                     />
                     <img
                       src={sunshineKitchen2}
-                      alt="CBT image 1"
-                      onClick={() => setSelectedImage(cbt1)}
-                      className="w-full rounded-lg shadow-md object-cover cursor-pointer hover:scale-105 transition"
-                    />
-                    <img
-                      src={sunshineKitchen3}
-                      alt="cbt image 2"
-                      onClick={() => setSelectedImage(cbt2)}
+                      alt="sunshineKitchen2"
+                      onClick={() => setSelectedImage(sunshineKitchen2)}
                       className="w-full rounded-lg shadow-md object-cover cursor-pointer hover:scale-105 transition"
                     />
                   </div>
