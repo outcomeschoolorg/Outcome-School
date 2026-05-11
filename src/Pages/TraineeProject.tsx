@@ -355,9 +355,9 @@ const TraineeProject = () => {
               <div className="flex gap-2 items-center mb-5">
                 <div className="w-80">
                   <img
-                    src={sunshineKitchen1}
-                    alt="sunshineKitchen1"
-                    onClick={() => setSelectedImage(sunshineKitchen1)}
+                    src={sunshineKitchen3}
+                    alt="sunshineKitchen3"
+                    onClick={() => setSelectedImage(sunshineKitchen3)}
                     className="w-full rounded-lg shadow-md object-cover cursor-pointer hover:scale-105 transition"
                   />
                 </div>
