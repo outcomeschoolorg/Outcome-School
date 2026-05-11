@@ -13,6 +13,11 @@ import cbt from "../assets/images/CBT.jpg";
 import cbt1 from "../assets/images/CBT1.jpg";
 import cbt2 from "../assets/images/CBT2.jpg";
 import cbt3 from "../assets/images/CBT3.jpg";
+import sunshineKitchen1 from "../assets/images/SunshineKitchen1.png";
+import sunshineKitchen2 from "../assets/images/SunshineKitchen2.png";
+import sunshineKitchen3 from "../assets/images/SunshineKitchen3.png";
+import sunshineKitchen4 from "../assets/images/SunshineKitchen4.png";
+
 import { Helmet } from "react-helmet-async";
 
 const TraineeProject = () => {
@@ -66,9 +71,9 @@ const TraineeProject = () => {
             lessons that shaped their growth as emerging technologists.
           </p>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-10 mb-8 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-10 mb-8 ">
             {/* Project Card 1 */}
-            <div className="border border-[#7D65ED] rounded-[10px] px-3 py-3 flex flex-col">
+            <div className="border border-[#7D65ED] rounded-[10px] px-3 py-3 flex flex-col h-full">
               <div className="flex gap-5 items-center mb-5">
                 <div className="w-50">
                   <img
@@ -93,7 +98,7 @@ const TraineeProject = () => {
                 data. Other features include dashboards, charts, bulk exports,
                 and conduct tracking.
               </p>
-              <div className="flex gap-4">
+              <div className="flex gap-4 mt-auto pt-3">
                 <button
                   onClick={() => setOpenCard(openCard === 1 ? null : 1)}
                   className="bg-[#6036E1] font-semibold border-2 border-[#6036E1] rounded-[999px] hover:shadow-2xl hover:shadow-[#6036E1] text-white px-4 py-3 hover:text-[#6036E1] hover:bg-white"
@@ -160,7 +165,7 @@ const TraineeProject = () => {
             </div>
 
             {/* Project Card 2 */}
-            <div className="border border-[#7D65ED] rounded-[10px] px-3 py-3 flex flex-col">
+            <div className="border border-[#7D65ED] rounded-[10px] px-3 py-3 flex flex-col h-full">
               <div className="flex gap-2 items-center mb-5">
                 <div className="w-80">
                   <img
@@ -185,7 +190,7 @@ const TraineeProject = () => {
                 tracks, and reports for micro‑businesses, turning complex tax
                 tasks into a fast, stress‑free workflow.
               </p>
-              <div className="flex gap-4">
+              <div className="flex gap-4 mt-auto pt-3">
                 <button
                   onClick={() => setOpenCard(openCard === 2 ? null : 2)}
                   className="bg-[#6036E1] font-semibold border-2 border-[#6036E1] rounded-[999px] hover:shadow-2xl hover:shadow-[#6036E1] text-white px-4 py-3 hover:text-[#6036E1] hover:bg-white"
@@ -252,7 +257,7 @@ const TraineeProject = () => {
             </div>
 
             {/* Project Card 3 */}
-            <div className="border border-[#7D65ED] rounded-[10px] px-3 py-3 flex flex-col">
+            <div className="border border-[#7D65ED] rounded-[10px] px-3 py-3 flex flex-col h-full">
               <div className="flex gap-2 items-center mb-5">
                 <div className="w-80">
                   <img
@@ -275,7 +280,7 @@ const TraineeProject = () => {
                 randomized test versions for more secure and efficient
                 assessments.
               </p>
-              <div className="flex gap-4">
+              <div className="flex gap-4 mt-auto pt-3">
                 <button
                   onClick={() => setOpenCard(openCard === 3 ? null : 3)}
                   className="bg-[#6036E1] font-semibold border-2 border-[#6036E1] rounded-[999px] hover:shadow-2xl hover:shadow-[#6036E1] text-white px-4 py-3 hover:text-[#6036E1] hover:bg-white"
@@ -338,6 +343,100 @@ const TraineeProject = () => {
                       src={cbt3}
                       alt="cbt image 3"
                       onClick={() => setSelectedImage(cbt3)}
+                      className="w-full rounded-lg shadow-md object-cover cursor-pointer hover:scale-105 transition"
+                    />
+                  </div>
+                </div>
+              )}
+            </div>
+
+            {/* Project Card 4 */}
+            <div className="border border-[#7D65ED] rounded-[10px] px-3 py-3 flex flex-col h-full">
+              <div className="flex gap-2 items-center mb-5">
+                <div className="w-80">
+                  <img
+                    src={sunshineKitchen1}
+                    alt="sunshineKitchen1"
+                    onClick={() => setSelectedImage(sunshineKitchen1)}
+                    className="w-full rounded-lg shadow-md object-cover cursor-pointer hover:scale-105 transition"
+                  />
+                </div>
+                <div>
+                  <h1 className="text-[25px] font-bold">
+                    Sunshine Kitchen: A Modern Front-End Experience
+                  </h1>
+                  <p className="text-[#444269]">
+                    Pure HTML5 for semantics and CSS3 for logic and styling.
+                  </p>
+                </div>
+              </div>
+              <p className="text-[#151223] text-[16px] mb-5 text-start">
+                The Sunshine Kitchen front‑end project is a modern, visually
+                vibrant web experience designed to capture the soul of authentic
+                Jamaican cuisine. Built with a focus on clarity, warmth, and
+                cultural richness, the site blends bold colors, smooth
+                interactions, and clean typography to create an inviting digital
+                presence for a local Jamaican restaurant.
+              </p>
+              <div className="flex gap-4 mt-auto pt-3">
+                <button
+                  onClick={() => setOpenCard(openCard === 4 ? null : 4)}
+                  className="bg-[#6036E1] font-semibold border-2 border-[#6036E1] rounded-[999px] hover:shadow-2xl hover:shadow-[#6036E1] text-white px-4 py-3 hover:text-[#6036E1] hover:bg-white"
+                >
+                  <i className="fa-solid fa-eye mr-2"></i>
+
+                  {openCard === 4 ? "View Less" : "View More"}
+                </button>
+
+                <button
+                  onClick={() =>
+                    window.open(
+                      "https://docs.google.com/presentation/d/1HJfl82NDDOnCK_DpnwZW3Pnhiqvn4uTBFtsuVflDwl0/edit?slide=id.p5#slide=id.p5",
+                      "_blank",
+                    )
+                  }
+                  className=" font-semibold border-2 border-[#6036E1] text-[#6036E1] rounded-[999px] hover:shadow-2xl hover:shadow-[#6036E1] px-4 py-3  hover:bg-whitt"
+                >
+                  <i className="fa-solid fa-book mr-2"></i>
+                  Presentation Slides
+                </button>
+              </div>
+
+              {/* Participants section - only shows when showParticipants2 is true */}
+              {openCard === 4 && (
+                <div className="mt-5">
+                  <hr className="my-5 border border-gray-300" />
+                  <p className="font-bold text-black">Participants</p>
+                  <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-8 mt-5 mb-8">
+                    <button
+                      onClick={() =>
+                        window.open(
+                          "https://www.linkedin.com/in/shawn-segree-2b5619277/?skipRedirect=true",
+                        )
+                      }
+                      className="text-center py-2 px-2 border-2 border-[#BEB9F9] rounded-[100px]"
+                    >
+                      Shawn Segree
+                      <i className="fa-brands fa-linkedin text-[25px] text-blue-800 ml-2"></i>
+                    </button>
+                  </div>
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-5 mb-8">
+                    <img
+                      src={sunshineKitchen1}
+                      alt="CBT image 1"
+                      onClick={() => setSelectedImage(cbt)}
+                      className="w-full rounded-lg shadow-md object-cover cursor-pointer hover:scale-105 transition"
+                    />
+                    <img
+                      src={sunshineKitchen2}
+                      alt="CBT image 1"
+                      onClick={() => setSelectedImage(cbt1)}
+                      className="w-full rounded-lg shadow-md object-cover cursor-pointer hover:scale-105 transition"
+                    />
+                    <img
+                      src={sunshineKitchen3}
+                      alt="cbt image 2"
+                      onClick={() => setSelectedImage(cbt2)}
                       className="w-full rounded-lg shadow-md object-cover cursor-pointer hover:scale-105 transition"
                     />
                   </div>
