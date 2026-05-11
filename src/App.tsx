@@ -62,10 +62,10 @@ import RoboticsLevel3 from "./Pages/CoursesDescription/Robotics/level3";
 import RoboticsLevel4 from "./Pages/CoursesDescription/Robotics/level4";
 import RoboticsLevel5 from "./Pages/CoursesDescription/Robotics/level5";
 import RoboticsLevel6 from "./Pages/CoursesDescription/Robotics/level6";
-
 import BlogEventsDetails from "./Pages/BlogEventsDetails";
 import CompanyPolicies from "./Pages/CompanyPolicies";
 import OurPartners from "./Pages/OurPartners";
+import Workshops from "./Pages/Workshops";
 const App = () => {
   return (
     <>
@@ -190,6 +190,7 @@ const App = () => {
           <Route path="/robotics-level5" element={<RoboticsLevel5 />} />
           <Route path="/robotics-level6" element={<RoboticsLevel6 />} />
           <Route path="/our-partners" element={<OurPartners />} />
+          <Route path="/workshops" element={<Workshops />} />
         </Routes>
       </Router>
 
