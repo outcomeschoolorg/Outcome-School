@@ -2,11 +2,15 @@ import Footer from "../Component/Footer";
 import NavBar from "../Component/NavBar";
 import google from "../assets/images/our-partners/google.png";
 import support from "../assets/images/our-partners/support.png";
+import cisco from "../assets/images/our-partners/Cisco.jpg";
 
 const partnersData = [
   {
     title: "Educational Partners",
-    images: [{ src: google, className: "h-16 sm:h-20" }],
+    images: [
+      { src: google, className: "h-16 sm:h-20" },
+      { src: cisco, className: "h-25 sm:h-20" },
+    ],
   },
   { title: "Government Partners", images: [] },
   {
@@ -38,7 +42,7 @@ const OurPartners = () => {
               {section.title}
             </h2>
             {section.images.length > 0 && (
-              <div>
+              <div className="flex items-center gap-10">
                 {section.images.map((img, i) => (
                   <img
                     key={i}
