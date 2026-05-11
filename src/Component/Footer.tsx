@@ -8,12 +8,26 @@ const Footer = () => {
       <div className="bg-[#6036E1]">
         <div className="container px-10  py-10 gap-4  mx-auto   ">
           <div className="flex flex-col lg:flex-row mx-auto text-center lg:text-start justify-between items-center gap-3">
+            <div>
+              <a
+                aria-label="Outcome School"
+                href="https://app.candid.org/profile/16434540/outcome-school-39-3735718/?pkId=ff906652-63e4-4a8e-9b8e-7469a9022e21"
+                target="_blank"
+              >
+                {" "}
+                <img
+                  alt=""
+                  src="https://widgets.guidestar.org/prod/v1/pdp/transparency-seal/16434540/svg"
+                />{" "}
+              </a>
+            </div>
             <a href="/" className="flex items-center gap-2">
               <img src={logo} alt="Logo" className="w-[48px] logo rounded-lg" />
               <span className="text-white text-[43px] font-semibold">
                 Outcome School
               </span>
             </a>
+
             <p className="text-white text-[16px] font-medium lg:w-[40%]">
               Welcome to Outcome School, where every lesson is a bridge to
               opportunity and every learner is empowered to build, innovate, and
@@ -65,6 +79,11 @@ const Footer = () => {
                 <Link to="/trainee-project">
                   <li className="hover:underline duration-300  my-2 ease-in-out text-[16px] text-white cursor-pointer">
                     Trainee Project
+                  </li>
+                </Link>
+                <Link to="/workshops">
+                  <li className="hover:underline duration-300  my-2 ease-in-out text-[16px] text-white cursor-pointer">
+                    Workshops
                   </li>
                 </Link>
               </ul>
