@@ -25,6 +25,14 @@ const Contact = () => {
               Click to learn more or click and complete the form below to
               contact us.
             </p>
+            <div className="flex justify-center mt-3 mb-5">
+              <Link
+                to="/contact-us"
+                className="block ml-5 mt-3 w-[20%] text-center justify-content:center font-semibold border-2 border-[#8A38F5] text-white rounded-[999px] px-3 py-3 hover:text-[#8A38F5] hover:bg-white mb-5 bg-[#8A38F5]"
+              >
+                Contact Form
+              </Link>
+            </div>
           </div>
 
           <div>
@@ -104,15 +112,6 @@ const Contact = () => {
                 </Link>
               </div>
             </div>
-          </div>
-
-          <div className="flex justify-center mt-3 mb-5">
-            <Link
-              to="/contact-us"
-              className="block ml-5 mt-3 w-[20%] text-center justify-content:center font-semibold border-2 border-[#8A38F5] text-white rounded-[999px] px-3 py-3 hover:text-[#8A38F5] hover:bg-white mb-5 bg-[#8A38F5]"
-            >
-              Contact Form
-            </Link>
           </div>
         </div>
       </div>

@@ -169,7 +169,7 @@ const Workshops = () => {
               </button>
             </Link>
 
-            <Link to="/contact">
+            <Link to="/contact-us">
               <button className="bg-[#6036E1] text-white px-6 py-3 rounded-full border-2 border-[#6036E1] hover:bg-white hover:text-[#6036E1] transition">
                 Bring a Workshop to Your Organization
               </button>
