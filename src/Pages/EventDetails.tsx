@@ -49,14 +49,34 @@ const EventDetails = () => {
             📅 {event.date} | 🕒 {event.time} | 🌍 {event.timezone}
           </p>
 
-          <p className="text-gray-600">📍 {event.location}</p>
-
           {/* DESCRIPTION */}
           {event.description && (
             <div className="mt-8 whitespace-pre-line text-gray-700 leading-relaxed font-semibold">
               {event.description}
             </div>
           )}
+
+          <br />
+
+          {!event.location.toLowerCase().includes("online") &&
+            !event.location.toLowerCase().includes("virtual") &&
+            event.mapEmbed && (
+              <div className="overflow-hidden rounded-2xl border">
+                <div>
+                  <p className="text-gray-600">📍 {event.location}</p>
+                </div>
+                <iframe
+                  src={event.mapEmbed}
+                  width="100%"
+                  height="450"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  className="w-full"
+                />
+              </div>
+            )}
 
           {/* BACK BUTTON */}
           <Link
