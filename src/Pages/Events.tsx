@@ -69,7 +69,9 @@ const Events = () => {
 
     // MULTI FILTER (FIXED)
     const matchesFilters =
-      selectedFilters.length === 0 ? true : selectedFilters.includes(event.tag);
+      selectedFilters.length === 0
+        ? true
+        : event.tag.some((tag) => selectedFilters.includes(tag));
 
     return (
       matchesDate &&
@@ -145,19 +147,27 @@ const Events = () => {
             <Link
               key={event.id}
               to={`/event-details/${index}`}
-              className="border rounded-lg p-4 hover:shadow-md"
+              className="border rounded-lg p-4 hover:shadow-md flex flex-col h-full"
             >
-              <div className="w-full aspect-[16/9] overflow-hidden rounded-lg mb-3">
+              <div className="relative w-full aspect-[16/9] overflow-hidden rounded-lg mb-3">
                 <img
                   src={event.image}
                   alt={event.title}
                   className="w-full h-full object-cover"
                 />
-              </div>
 
-              <span className="text-sm border px-2 py-1 rounded-full">
-                {event.tag}
-              </span>
+                <div className="absolute bottom-2 left-2 bg-white/95 px-2 py-1 rounded-md shadow text-center">
+                  <p className="text-[9px] sm:text-[10px] font-medium text-gray-500 uppercase leading-none">
+                    {new Date(event.date).toLocaleString("en-US", {
+                      month: "short",
+                    })}
+                  </p>
+
+                  <p className="text-xs sm:text-sm font-bold text-[#6036E1] leading-none mt-[2px]">
+                    {new Date(event.date).getDate()}
+                  </p>
+                </div>
+              </div>
 
               <h2 className="font-bold text-xl mt-3">{event.title}</h2>
 
@@ -166,6 +176,17 @@ const Events = () => {
               </p>
 
               <p className="text-sm text-gray-600">{event.location}</p>
+
+              <div className="mt-auto flex flex-wrap justify-end gap-2">
+                {event.tag.map((tag) => (
+                  <span
+                    key={tag}
+                    className="text-xs border px-3 py-1 rounded-full"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
             </Link>
           ))}
         </div>
