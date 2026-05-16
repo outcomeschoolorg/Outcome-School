@@ -6,7 +6,7 @@ import Footer from "../Component/Footer";
 const BlogEventsDetails = () => {
   const { id } = useParams();
 
-  const event = events[Number(id)];
+  const event = events.find((e) => e.id === Number(id));
 
   if (!event) {
     return (
@@ -37,9 +37,16 @@ const BlogEventsDetails = () => {
           />
 
           {/* TAG */}
-          <span className="border px-3 py-1 rounded-full text-sm">
-            {event.tag}
-          </span>
+          <div className="flex flex-wrap gap-2 mt-2">
+            {event.tag.map((t, index) => (
+              <span
+                key={index}
+                className="border px-3 py-1 rounded-full text-sm bg-gray-100 text-gray-700"
+              >
+                {t}
+              </span>
+            ))}
+          </div>
 
           {/* TITLE */}
           <h1 className="text-4xl font-bold mt-4">{event.title}</h1>
@@ -57,6 +64,45 @@ const BlogEventsDetails = () => {
               {event.description}
             </div>
           )}
+
+          <br />
+          {event.register && (
+            <div className="mb-5">
+              <a
+                href={event.register}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-8 inline-flex items-center justify-center gap-2 px-8 py-3 rounded-full 
+             bg-gradient-to-r from-[#8A38F5] to-[#6D28D9]
+             text-white font-semibold shadow-lg
+             hover:shadow-xl hover:scale-105 active:scale-95
+             transition-all duration-200 ease-in-out"
+              >
+                Register Now
+                <span className="text-lg">→</span>
+              </a>
+            </div>
+          )}
+
+          {!event.location.toLowerCase().includes("online") &&
+            !event.location.toLowerCase().includes("virtual") &&
+            event.mapEmbed && (
+              <div className="overflow-hidden rounded-2xl border">
+                <div>
+                  <p className="text-gray-600">📍 {event.location}</p>
+                </div>
+                <iframe
+                  src={event.mapEmbed}
+                  width="100%"
+                  height="450"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  className="w-full"
+                />
+              </div>
+            )}
 
           {/* BACK BUTTON */}
           <Link
