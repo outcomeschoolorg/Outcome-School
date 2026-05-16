@@ -37,9 +37,16 @@ const EventDetails = () => {
           />
 
           {/* TAG */}
-          <span className="border px-3 py-1 rounded-full text-sm">
-            {event.tag}
-          </span>
+          <div className="flex flex-wrap gap-2 mt-2">
+            {event.tag.map((t, index) => (
+              <span
+                key={index}
+                className="border px-3 py-1 rounded-full text-sm bg-gray-100 text-gray-700"
+              >
+                {t}
+              </span>
+            ))}
+          </div>
 
           {/* TITLE */}
           <h1 className="text-4xl font-bold mt-4">{event.title}</h1>
