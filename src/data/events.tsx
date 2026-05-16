@@ -15,6 +15,7 @@ interface EventItem {
   description?: string;
   NumberAttendees?: number;
   mapEmbed?: string;
+  register?: string;
 }
 
 export const events: EventItem[] = [
@@ -24,6 +25,7 @@ export const events: EventItem[] = [
     tag: ["Game Development", "Ages 7-13"],
     date: "Aug 12, 2026",
     time: "9 AM - 12 PM",
+    register: "https://tally.so/r/rjJAGN",
     timezone: "PT",
     location: "700 South Flower Street, Suite 1950, Los Angeles, CA 90017",
     image: GameEvent,

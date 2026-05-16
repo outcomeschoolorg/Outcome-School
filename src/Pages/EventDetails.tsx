@@ -57,6 +57,23 @@ const EventDetails = () => {
           )}
 
           <br />
+          {event.register && (
+            <div className="mb-5">
+              <a
+                href={event.register}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-8 inline-flex items-center justify-center gap-2 px-8 py-3 rounded-full 
+             bg-gradient-to-r from-[#8A38F5] to-[#6D28D9]
+             text-white font-semibold shadow-lg
+             hover:shadow-xl hover:scale-105 active:scale-95
+             transition-all duration-200 ease-in-out"
+              >
+                Register Now
+                <span className="text-lg">→</span>
+              </a>
+            </div>
+          )}
 
           {!event.location.toLowerCase().includes("online") &&
             !event.location.toLowerCase().includes("virtual") &&
