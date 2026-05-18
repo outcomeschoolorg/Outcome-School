@@ -23,7 +23,7 @@ const items: BlogItem[] = [
     id: 97,
     type: "card",
     title: "Build Your First Game — In Person in Los Angeles!",
-    date: "August 12, 2026",
+    date: "August 07, 2026",
     image: GameEvent,
     description:
       "Join Outcome School in Los Angeles for a hands-on workshop where kids ages 7–13 design and build their very first game in a fun, creative, beginner-friendly environment.",
