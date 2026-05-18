@@ -17,6 +17,9 @@ import sunshineKitchen1 from "../assets/images/SunshineKitchen1.png";
 import sunshineKitchen2 from "../assets/images/SunshineKitchen2.png";
 import sunshineKitchen3 from "../assets/images/SunshineKitchen3.png";
 import sunshineKitchen4 from "../assets/images/SunshineKitchen4.png";
+import PENNY1 from "../assets/images/PENNY1.png";
+import PENNY3 from "../assets/images/PENNY3.png";
+import PENNY4 from "../assets/images/PENNY4.png";
 
 import { Helmet } from "react-helmet-async";
 
@@ -437,6 +440,97 @@ const TraineeProject = () => {
                       src={sunshineKitchen2}
                       alt="sunshineKitchen2"
                       onClick={() => setSelectedImage(sunshineKitchen2)}
+                      className="w-full rounded-lg shadow-md object-cover cursor-pointer hover:scale-105 transition"
+                    />
+                  </div>
+                </div>
+              )}
+            </div>
+
+            {/* Project Card 5 */}
+            <div className="border border-[#7D65ED] rounded-[10px] px-3 py-3 flex flex-col h-full">
+              <div className="flex gap-2 items-center mb-5">
+                <div className="w-80">
+                  <img
+                    src={PENNY1}
+                    alt="PENNY WISE BUDGETING APPLICATION"
+                    onClick={() => setSelectedImage(PENNY1)}
+                    className="w-full rounded-lg shadow-md object-cover cursor-pointer hover:scale-105 transition"
+                  />
+                </div>
+                <div>
+                  <h1 className="text-[25px] font-bold">
+                    PENNY WISE BUDGETING APPLICATION
+                  </h1>
+                  <p className="text-[#444269]">Figma  and FigJam.</p>
+                </div>
+              </div>
+              <p className="text-[#151223] text-[16px] mb-5 text-start">
+                Penny Wise is a modern budgeting application designed to
+                simplify financial management. It helps users track spending,
+                plan goals, and build healthier money habits through clean
+                design, smart automation, and real‑time insights—making
+                financial clarity effortless and empowering for everyday life.
+              </p>
+              <div className="flex gap-4 mt-auto pt-3">
+                <button
+                  onClick={() => setOpenCard(openCard === 5 ? null : 5)}
+                  className="bg-[#6036E1] font-semibold border-2 border-[#6036E1] rounded-[999px] hover:shadow-2xl hover:shadow-[#6036E1] text-white px-4 py-3 hover:text-[#6036E1] hover:bg-white"
+                >
+                  <i className="fa-solid fa-eye mr-2"></i>
+
+                  {openCard === 5 ? "View Less" : "View More"}
+                </button>
+
+                <button
+                  onClick={() =>
+                    window.open(
+                      "https://docs.google.com/presentation/d/1n7N_J5CHDgyRR3h9hVqVdo2h719T_F6DXFJn5XIbiX8/edit?usp=sharing",
+                      "_blank",
+                    )
+                  }
+                  className=" font-semibold border-2 border-[#6036E1] text-[#6036E1] rounded-[999px] hover:shadow-2xl hover:shadow-[#6036E1] px-4 py-3  hover:bg-whitt"
+                >
+                  <i className="fa-solid fa-book mr-2"></i>
+                  Presentation Slides
+                </button>
+              </div>
+
+              {/* Participants section - only shows when showParticipants2 is true */}
+              {openCard === 5 && (
+                <div className="mt-5">
+                  <hr className="my-5 border border-gray-300" />
+                  <p className="font-bold text-black">Participants</p>
+                  <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-8 mt-5 mb-8">
+                    <button
+                      onClick={() =>
+                        window.open(
+                          "https://www.linkedin.com/in/amare-oluwaseun-950b89241/",
+                        )
+                      }
+                      className="text-center py-2 px-2 border-2 border-[#BEB9F9] rounded-[100px]"
+                    >
+                      Larry Amare
+                      <i className="fa-brands fa-linkedin text-[25px] text-blue-800 ml-2"></i>
+                    </button>
+                  </div>
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-5 mb-8">
+                    <img
+                      src={PENNY1}
+                      alt="PENNY WISE BUDGETING APPLICATION"
+                      onClick={() => setSelectedImage(PENNY1)}
+                      className="w-full rounded-lg shadow-md object-cover cursor-pointer hover:scale-105 transition"
+                    />
+                    <img
+                      src={PENNY3}
+                      alt="PENNY WISE BUDGETING APPLICATION"
+                      onClick={() => setSelectedImage(PENNY3)}
+                      className="w-full rounded-lg shadow-md object-cover cursor-pointer hover:scale-105 transition"
+                    />
+                    <img
+                      src={PENNY4}
+                      alt="PENNY WISE BUDGETING APPLICATION"
+                      onClick={() => setSelectedImage(PENNY4)}
                       className="w-full rounded-lg shadow-md object-cover cursor-pointer hover:scale-105 transition"
                     />
                   </div>
