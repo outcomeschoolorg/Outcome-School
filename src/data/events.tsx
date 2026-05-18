@@ -23,7 +23,7 @@ export const events: EventItem[] = [
     id: 97,
     title: "Build Your First Game — In Person in Los Angeles!",
     tag: ["Game Development", "Ages 7-13"],
-    date: "Aug 12, 2026",
+    date: "Aug 07, 2026",
     time: "9 AM - 12 PM",
     register: "https://tally.so/r/rjJAGN",
     timezone: "PT",
