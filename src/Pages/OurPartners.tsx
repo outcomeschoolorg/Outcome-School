@@ -46,7 +46,7 @@ const OurPartners = () => {
               {section.title}
             </h2>
             {section.images.length > 0 && (
-              <div className="flex flex-wrap justify-center items-center gap-10">
+              <div className="flex flex-wrap items-center gap-10">
                 {section.images.map((img, i) => (
                   <img
                     key={i}
