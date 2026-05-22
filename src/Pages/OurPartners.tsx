@@ -3,16 +3,20 @@ import NavBar from "../Component/NavBar";
 import google from "../assets/images/our-partners/google.png";
 import support from "../assets/images/our-partners/support.png";
 import cisco from "../assets/images/our-partners/Cisco.jpg";
+import EDD from "../assets/images/our-partners/EDD.png";
 
 const partnersData = [
   {
     title: "Educational Partners",
     images: [
-      { src: google, className: "h-16 sm:h-20" },
-      { src: cisco, className: "h-25 sm:h-20" },
+      { src: google, className: "h-20 sm:h-19 md:h-25" },
+      { src: cisco, className: "h-20 sm:h-19 md:h-25" },
     ],
   },
-  { title: "Government Partners", images: [] },
+  {
+    title: "Government Partners",
+    images: [{ src: EDD, className: "h-28 sm:h-25 md:h-35" }],
+  },
   {
     title: "In-Kind Support Partners",
     images: [{ src: support, className: "h-28 sm:h-32 md:h-40" }],
@@ -42,7 +46,7 @@ const OurPartners = () => {
               {section.title}
             </h2>
             {section.images.length > 0 && (
-              <div className="flex items-center gap-10">
+              <div className="flex flex-wrap justify-center items-center gap-10">
                 {section.images.map((img, i) => (
                   <img
                     key={i}
