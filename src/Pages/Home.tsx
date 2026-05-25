@@ -101,90 +101,128 @@ const Home = () => {
       <StudentReview />
 
       <div className="bg-[#8080801A]">
-        <div className="container   mx-auto py-10">
-          <div className="flex flex-col lg:flex-row gap-6 items-center justify-center w-full">
-            <div className="flex flex-col gap-10 lg:flex-row lg:gap-10 mt-10 mx-auto items-center">
-              <div>
-                <Link to="/donate">
-                  <div className="bg-[#8A38F5] rounded-[25px] h-[170px] lg:h-[350px] lg:w-[300px] w-full max-w-[320px] items-center pr-4 pt-4">
-                    <i className="fa-solid fa-arrow-up text-white float-right rotate-45 translate-y-1"></i>
-                    <img
-                      src={icon}
-                      alt="icon"
-                      className="mx-auto mt-5 lg:mt-20"
-                    />
-                    <p className="text-white text-center text-[28px] font-bold">
-                      Donate
-                    </p>
-                  </div>
-                </Link>
-              </div>
-              <div>
-                <Link to="/tech-school">
-                  <div className="bg-[#8A38F5] mb-5  rounded-[25px] h-[170px] lg:w-[300px] w-full max-w-[320px] items-center  pr-4 pt-4">
-                    <i className="fa-solid fa-arrow-up text-white float-right rotate-45 translate-y-1"></i>
-                    <img src={acquire} alt="icon" className="mx-auto mt-5" />
-                    <p className="text-white text-center text-[28px] font-bold">
-                      Acquire
-                    </p>
-                  </div>
-                </Link>
+        <div className="container mx-auto px-4 py-10">
+          {/* GRID */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {/* DONATE */}
+            <Link to="/donate" className="lg:row-span-2">
+              <div className="bg-[#8A38F5] rounded-[25px] min-h-[220px] lg:min-h-full p-5 flex flex-col items-center justify-center hover:shadow-xl transition">
+                <i className="fa-solid fa-arrow-up text-white self-end rotate-45"></i>
 
-                <Link to="/volunteer-form">
-                  <div className="bg-[#8A38F5] mb-5  rounded-[25px] h-[170px] w-full max-w-[340px] items-center  pr-4 pt-4">
-                    <i className="fa-solid fa-arrow-up text-white float-right rotate-45 translate-y-1"></i>
-                    <img src={volunteer} alt="icon" className="mx-auto mt-5" />
-                    <p className="text-white text-center text-[28px] font-bold">
-                      Volunteer
-                    </p>
-                  </div>
-                </Link>
-              </div>
+                <img
+                  src={icon}
+                  alt="icon"
+                  className="w-16 sm:w-20 lg:w-24 mt-4"
+                />
 
-              <div className="">
-                <Link to="/employer-partnerships">
-                  <div className="bg-[#8A38F5] mb-5 rounded-[25px] h-[170px] lg:w-[300px] w-full max-w-[320px] items-center  pr-4 pt-4">
-                    <i className="fa-solid fa-arrow-up text-white float-right rotate-45 translate-y-1"></i>
-                    <img src={employ} alt="icon" className="mx-auto mt-5" />
-                    <p className="text-white text-center text-[28px] font-bold">
-                      Employ
-                    </p>
-                  </div>
-                </Link>
-
-                <div
-                  onClick={() => window.open(report2025, "_blank")}
-                  className="bg-[#8A38F5] mb-5 rounded-[25px] h-[170px] w-full max-w-[320px] flex flex-col items-center justify-center pr-4 pt-4 cursor-pointer hover:shadow-lg transition"
-                >
-                  <i className="fa-solid fa-arrow-up text-white float-right rotate-45 translate-y-1"></i>
-                  <img src={annual} alt="icon" className="mx-auto mt-5" />
-                  <p className="text-white text-center text-[28px] font-bold mt-2">
-                    Annual Reports
-                  </p>
-                </div>
+                <p className="text-white text-center text-2xl lg:text-3xl font-bold mt-4">
+                  Donate
+                </p>
               </div>
-              <div>
-                <a href="#blog">
-                  <div className="bg-[#8A38F5] mb-5  rounded-[25px] h-[170px] lg:w-[300px] w-full max-w-[320px] items-center  pr-4 pt-4">
-                    <i className="fa-solid fa-arrow-up text-white float-right rotate-45 translate-y-1"></i>
-                    <img src={blogs} alt="icon" className="mx-auto mt-5" />
-                    <p className="text-white text-center text-[28px] font-bold">
-                      Blogs & Events
-                    </p>
-                  </div>
-                </a>
+            </Link>
 
-                <Link to="/aboutUs">
-                  <div className="bg-[#8A38F5] mb-5 rounded-[25px] h-[170px] w-full max-w-[320px] flex flex-col items-center justify-center pr-4 pt-4 cursor-pointer hover:shadow-lg transition">
-                    <i className="fa-solid fa-arrow-up text-white float-right rotate-45 translate-y-1"></i>
-                    <img src={about} alt="icon" className="mx-auto mt-5" />
-                    <p className="text-white text-center text-[28px] font-bold mt-2">
-                      About Us
-                    </p>
-                  </div>
-                </Link>
+            {/* ACQUIRE */}
+            <Link to="/tech-school">
+              <div className="bg-[#8A38F5] rounded-[25px] min-h-[170px] p-5 flex flex-col items-center justify-center hover:shadow-xl transition">
+                <i className="fa-solid fa-arrow-up text-white self-end rotate-45"></i>
+
+                <img
+                  src={acquire}
+                  alt="icon"
+                  className="w-14 sm:w-16 lg:w-20 mt-2"
+                />
+
+                <p className="text-white text-center text-xl lg:text-2xl font-bold mt-3">
+                  Acquire
+                </p>
               </div>
+            </Link>
+
+            {/* VOLUNTEER */}
+            <Link to="/volunteer-form">
+              <div className="bg-[#8A38F5] rounded-[25px] min-h-[170px] p-5 flex flex-col items-center justify-center hover:shadow-xl transition">
+                <i className="fa-solid fa-arrow-up text-white self-end rotate-45"></i>
+
+                <img
+                  src={volunteer}
+                  alt="icon"
+                  className="w-14 sm:w-16 lg:w-20 mt-2"
+                />
+
+                <p className="text-white text-center text-xl lg:text-2xl font-bold mt-3">
+                  Volunteer
+                </p>
+              </div>
+            </Link>
+
+            {/* EMPLOY */}
+            <Link to="/employer-partnerships">
+              <div className="bg-[#8A38F5] rounded-[25px] min-h-[170px] p-5 flex flex-col items-center justify-center hover:shadow-xl transition">
+                <i className="fa-solid fa-arrow-up text-white self-end rotate-45"></i>
+
+                <img
+                  src={employ}
+                  alt="icon"
+                  className="w-14 sm:w-16 lg:w-20 mt-2"
+                />
+
+                <p className="text-white text-center text-xl lg:text-2xl font-bold mt-3">
+                  Employ
+                </p>
+              </div>
+            </Link>
+
+            {/* ANNUAL REPORT */}
+            <div
+              onClick={() => window.open(report2025, "_blank")}
+              className="bg-[#8A38F5] rounded-[25px] min-h-[170px] p-5 flex flex-col items-center justify-center cursor-pointer hover:shadow-xl transition"
+            >
+              <i className="fa-solid fa-arrow-up text-white self-end rotate-45"></i>
+
+              <img
+                src={annual}
+                alt="icon"
+                className="w-14 sm:w-16 lg:w-20 mt-2"
+              />
+
+              <p className="text-white text-center text-xl lg:text-2xl font-bold mt-3">
+                Annual Reports
+              </p>
             </div>
+
+            {/* BLOGS */}
+            <a href="#blog">
+              <div className="bg-[#8A38F5] rounded-[25px] min-h-[170px] p-5 flex flex-col items-center justify-center hover:shadow-xl transition">
+                <i className="fa-solid fa-arrow-up text-white self-end rotate-45"></i>
+
+                <img
+                  src={blogs}
+                  alt="icon"
+                  className="w-14 sm:w-16 lg:w-20 mt-2"
+                />
+
+                <p className="text-white text-center text-xl lg:text-2xl font-bold mt-3">
+                  Blogs & Events
+                </p>
+              </div>
+            </a>
+
+            {/* ABOUT */}
+            <Link to="/aboutUs">
+              <div className="bg-[#8A38F5] rounded-[25px] min-h-[170px] p-5 flex flex-col items-center justify-center hover:shadow-xl transition">
+                <i className="fa-solid fa-arrow-up text-white self-end rotate-45"></i>
+
+                <img
+                  src={about}
+                  alt="icon"
+                  className="w-14 sm:w-16 lg:w-20 mt-2"
+                />
+
+                <p className="text-white text-center text-xl lg:text-2xl font-bold mt-3">
+                  About Us
+                </p>
+              </div>
+            </Link>
           </div>
         </div>
       </div>

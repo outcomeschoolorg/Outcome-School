@@ -115,25 +115,45 @@ const TechSchool = () => {
             Class Structure & Expectations
           </p>
 
-          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-5 mx-auto items-center justify-center">
-            <div>
-              <img src={clock} alt="clock" className="" />
-              <p className="my-4">2–3 live sessions per week</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-5">
+            {/* CARD */}
+            <div className="flex flex-col items-center text-center bg-white p-6 rounded-2xl h-full">
+              <img
+                src={clock}
+                alt="clock"
+                className="w-16 h-16 object-contain"
+              />
+
+              <p className="mt-4 text-base font-medium">
+                2–3 live sessions per week
+              </p>
             </div>
-            <div>
-              <img src={user} alt="clock" className="" />
-              <p className="my-2">
+
+            {/* CARD */}
+            <div className="flex flex-col items-center text-center bg-white p-6 rounded-2xl h-full">
+              <img src={user} alt="user" className="w-16 h-16 object-contain" />
+
+              <p className="mt-4 text-base font-medium">
                 At least 80% attendance and consistent homework completion
               </p>
             </div>
-            <div>
-              <img src={zoom} alt="clock" className="" />
-              {/* <p className="mt-8 ">Classes are online via Zoom</p> */}
-              <p className="my-4">Classes are online via Zoom</p>
+
+            {/* CARD */}
+            <div className="flex flex-col items-center text-center bg-white p-6 rounded-2xl h-full">
+              <img src={zoom} alt="zoom" className="w-16 h-16 object-contain" />
+
+              <p className="mt-4 text-base font-medium">
+                Classes are online via Zoom
+              </p>
             </div>
-            <div>
-              <img src={bag} alt="clock" className="" />
-              <p className="my-4">Join optional in-person community events</p>
+
+            {/* CARD */}
+            <div className="flex flex-col items-center text-center bg-white p-6 rounded-2xl h-full">
+              <img src={bag} alt="bag" className="w-16 h-16 object-contain" />
+
+              <p className="mt-4 text-base font-medium">
+                Join optional in-person community events
+              </p>
             </div>
           </div>
         </div>
