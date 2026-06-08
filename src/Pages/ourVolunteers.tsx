@@ -22,6 +22,9 @@ import Shiyun from "../assets/images/Shiyun.png";
 import freshman from "../assets/images/freshman.png";
 import Manya from "../assets/images/Manya.jpeg";
 import BhuvaniRangesh from "../assets/images/BhuvaniRangesh.png";
+import ManukMinasyan from "../assets/images/ManukMinasyan.jpg";
+import TammyCalderaro from "../assets/images/TammyCalderaro.jpg";
+import LydiaIgnatova from "../assets/images/LydiaIgnatova.png";
 import NavBar from "../Component/NavBar";
 import Modal from "../Component/Modal";
 import Footer from "../Component/Footer";
@@ -50,6 +53,9 @@ const OurVolunteer = () => {
   const [openfreshman, setOpenfreshman] = useState(false);
   const [openManya, setOpenManya] = useState(false);
   const [openBhuvaniRangesh, setOpenBhuvaniRangesh] = useState(false);
+  const [openTammyCalderaro, setOpenTammyCalderaro] = useState(false);
+  const [openLydiaIgnatova, setOpenLydiaIgnatova] = useState(false);
+  const [openManukMinasyan, setOpenManukMinasyan] = useState(false);
 
   return (
     <>
@@ -562,6 +568,72 @@ const OurVolunteer = () => {
                 <p
                   className="mt-10 font-medium hover:text-[#6036E1] hover:underline cursor-pointer hover:cursor-pointer"
                   onClick={() => setOpenBhuvaniRangesh(true)}
+                >
+                  Learn More
+                  <i className="fa-solid fa-greater-than text-[12px] ml-2"></i>
+                </p>
+              </div>
+              <div className="bg-[#F4F4FE] rounded-[10px] px-8  py-14 ">
+                <img
+                  src={TammyCalderaro}
+                  alt="TammyCalderaro"
+                  className="text-center mx-auto rounded-full w-40 h-40 object-cover"
+                />
+
+                <div className="mt-5 text-center">
+                  <p className="font-bold text-[22px]  ">Tammy Calderaro</p>
+                  <p className="font-semibold text-[20px] mt-4 ">
+                    Game Development Instructor
+                  </p>
+                </div>
+
+                <p
+                  className="mt-10 font-medium hover:text-[#6036E1] hover:underline cursor-pointer hover:cursor-pointer"
+                  onClick={() => setOpenTammyCalderaro(true)}
+                >
+                  Learn More
+                  <i className="fa-solid fa-greater-than text-[12px] ml-2"></i>
+                </p>
+              </div>
+              <div className="bg-[#F4F4FE] rounded-[10px] px-8  py-14 ">
+                <img
+                  src={ManukMinasyan}
+                  alt="ManukMinasyan"
+                  className="text-center mx-auto rounded-full w-[50%]  object-cover"
+                />
+
+                <div className="mt-5 text-center">
+                  <p className="font-bold text-[22px]  ">Manuk Minasyan</p>
+                  <p className="font-semibold text-[20px] mt-4 ">
+                    Game Development Instructor
+                  </p>
+                </div>
+
+                <p
+                  className="mt-10 font-medium hover:text-[#6036E1] hover:underline cursor-pointer hover:cursor-pointer"
+                  onClick={() => setOpenManukMinasyan(true)}
+                >
+                  Learn More
+                  <i className="fa-solid fa-greater-than text-[12px] ml-2"></i>
+                </p>
+              </div>
+              <div className="bg-[#F4F4FE] rounded-[10px] px-8  py-14 ">
+                <img
+                  src={LydiaIgnatova}
+                  alt="LydiaIgnatova"
+                  className="text-center mx-auto rounded-full w-[50%]  object-cover"
+                />
+
+                <div className="mt-5 text-center">
+                  <p className="font-bold text-[22px]  ">Lydia Ignatova</p>
+                  <p className="font-semibold text-[20px] mt-4 ">
+                    Robotics Engineering Instructor
+                  </p>
+                </div>
+
+                <p
+                  className="mt-10 font-medium hover:text-[#6036E1] hover:underline cursor-pointer hover:cursor-pointer"
+                  onClick={() => setOpenLydiaIgnatova(true)}
                 >
                   Learn More
                   <i className="fa-solid fa-greater-than text-[12px] ml-2"></i>
@@ -1284,6 +1356,103 @@ https://www.linkedin.com/in/jacquelinekoerner?utm_source=share&utm_campaign=shar
           Security Analyst, and it’s what I now bring to my role as an
           Instructor at Outcome School.” Bhuvani Rangesh | LinkedIn Would you
           please add this to the meet the volunteers
+        </p>
+      </Modal>
+      <Modal
+        isOpen={openTammyCalderaro}
+        onClose={() => setOpenTammyCalderaro(false)}
+        title="TammyCalderaro"
+        imageSrc={TammyCalderaro}
+        linkedinUrl="https://www.linkedin.com/in/tammysgui/"
+      >
+        <p>
+          Games have been part of my life for as long as I can remember.
+          Minecraft with my cousins when I was a kid, losing entire evenings to
+          Skyrim as a teenager, and somewhere along the way realizing that what
+          I loved about games was not just playing them but understanding how
+          they were built. Why certain worlds felt alive. That curiosity
+          eventually led me to study audiovisual storytelling, then to work at
+          Ubisoft on the publishing side of AAA mobile titles, and now to an MA
+          in Game Design at Falmouth University in the UK.
+        </p>
+        <br />
+        <p>
+          That journey through storytelling formats is actually what brought me
+          to game development specifically. Short stories, then film, then
+          eventually realizing that games do something no other format does.
+          They transform the story into your story. The world responds to you.
+          That sense of limitlessness, of being able to create whatever world
+          you wish, is what drew me in and what keeps me here.
+        </p>
+        <br />
+        <p>
+          Which is exactly why I want to share it. I joined as an instructor
+          because I genuinely enjoy supporting people, helping someone build on
+          an idea and watching them get excited about what they could make.
+          Teaching felt like the most direct way to do that. And Outcome School
+          felt like the right place for it. The games industry needs more people
+          in it, from more backgrounds, with more perspectives. I want to help
+          make that happen
+        </p>
+      </Modal>
+      <Modal
+        isOpen={openManukMinasyan}
+        onClose={() => setOpenManukMinasyan(false)}
+        title="Manuk Minasyan"
+        imageSrc={ManukMinasyan}
+        linkedinUrl="https://www.linkedin.com/in/manuk-minasyan-6a50771a1/"
+      >
+        <p>
+          I have a background in Computer Science. I am currently focused on
+          learning Unreal Engine and improving my game development skills. I
+          became interested in game development when I was a kid. I was
+          fascinated by the idea that someone could create an entire world from
+          nothing. It felt almost like magic to me. What inspired me most was
+          the ability to create your own world, characters, and rules, and bring
+          ideas to life.
+        </p>
+        <br />
+        <p>
+          I joined Outcome School because I wanted to continue learning, improve
+          my skills, and be part of a community that helps people grow as game
+          developers.
+        </p>
+        <br />
+        <p>
+          I am interested in becoming a Game Development Instructor because I
+          enjoy helping others learn. I know how challenging it can be to start
+          learning game development, and I would like to help new students gain
+          confidence and build their own projects.
+        </p>
+      </Modal>
+      <Modal
+        isOpen={openLydiaIgnatova}
+        onClose={() => setOpenLydiaIgnatova(false)}
+        title="Lydia Ignatova"
+        imageSrc={LydiaIgnatova}
+        linkedinUrl="https://www.linkedin.com/in/lydia-ignatova/"
+      >
+        <p>
+          I’m currently a PhD student at the University of Southern California,
+          where I study Human-Robot Interaction, with a focus on socially
+          assistive robotics. My research explores how robots can better support
+          and interact with people in meaningful ways. Outside of research, I
+          love crocheting, going to the gym, bullet journaling, and geocaching.
+        </p>
+        <br />
+        <p>
+          Robotics is important to me because it combines creativity,
+          engineering, and computing in a way that creates a tangible impact in
+          the world. I love seeing how physical systems can help people, solve
+          problems, and improve everyday life.
+        </p>
+        <br />
+        <p>
+          I wanted to become a Robotics Engineering instructor with the Outcome
+          School because I love helping others learn, and I really admire the
+          Outcome School's mission to increase access to technological skills.
+          I’m excited to be part of a community that empowers students with
+          opportunities to grow in robotics.
         </p>
       </Modal>
 
