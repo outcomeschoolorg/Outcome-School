@@ -25,6 +25,7 @@ import BhuvaniRangesh from "../assets/images/BhuvaniRangesh.png";
 import ManukMinasyan from "../assets/images/ManukMinasyan.jpg";
 import TammyCalderaro from "../assets/images/TammyCalderaro.jpg";
 import LydiaIgnatova from "../assets/images/LydiaIgnatova.png";
+import CarolynCho from "../assets/images/CarolynCho.jpeg";
 import NavBar from "../Component/NavBar";
 import Modal from "../Component/Modal";
 import Footer from "../Component/Footer";
@@ -56,6 +57,7 @@ const OurVolunteer = () => {
   const [openTammyCalderaro, setOpenTammyCalderaro] = useState(false);
   const [openLydiaIgnatova, setOpenLydiaIgnatova] = useState(false);
   const [openManukMinasyan, setOpenManukMinasyan] = useState(false);
+  const [openCarolynCho, setOpenCarolynCho] = useState(false);
 
   return (
     <>
@@ -634,6 +636,25 @@ const OurVolunteer = () => {
                 <p
                   className="mt-10 font-medium hover:text-[#6036E1] hover:underline cursor-pointer hover:cursor-pointer"
                   onClick={() => setOpenLydiaIgnatova(true)}
+                >
+                  Learn More
+                  <i className="fa-solid fa-greater-than text-[12px] ml-2"></i>
+                </p>
+              </div>
+              <div className="bg-[#F4F4FE] rounded-[10px] px-8  py-14 ">
+                <img
+                  src={CarolynCho}
+                  alt=""
+                  className="text-center mx-auto rounded-full w-[45%]  object-cover"
+                />
+                <div className="mt-5 text-center">
+                  <p className="font-bold text-[22px]  ">Carolyn Cho</p>
+                  <p className="font-semibold text-[20px] mt-4">Instructor</p>
+                </div>
+
+                <p
+                  className="mt-10 font-medium hover:text-[#6036E1] hover:underline cursor-pointer hover:cursor-pointer"
+                  onClick={() => setOpenFrank(true)}
                 >
                   Learn More
                   <i className="fa-solid fa-greater-than text-[12px] ml-2"></i>
@@ -1453,6 +1474,63 @@ https://www.linkedin.com/in/jacquelinekoerner?utm_source=share&utm_campaign=shar
           Outcome School's mission to increase access to technological skills.
           I’m excited to be part of a community that empowers students with
           opportunities to grow in robotics.
+        </p>
+      </Modal>
+      <Modal
+        isOpen={openCarolynCho}
+        onClose={() => setOpenCarolynCho(false)}
+        title="Carolyn Cho"
+        imageSrc={CarolynCho}
+        linkedinUrl="https://www.linkedin.com/in/carolyn-cho/"
+      >
+        <p>
+          My strong passion for product design is rooted in both authenticity
+          and empathy. With these two cornerstones in mind, I hope to create
+          meaningful impact by ensuring every design decision serves a clear
+          purpose, so the final result is not only visually compelling, but
+          meaningful as well. To me, product design is important because it
+          allows me to understand people’s experiences, solve real problems, and
+          create solutions that can positively influence their everyday lives.
+        </p>
+        <br />
+        <p>
+          Being a part of UX@Berkeley (Cal’s premier UX-focused student-run
+          organization committed to making design accessible to everyone) has
+          helped shape the way I approach design today—with intention,
+          responsibility, and a deep respect for the voices I am designing for.
+          Through this experience, I have learned that thoughtful design is not
+          just about creating products, but about advocating for users and
+          designing with empathy at every step of the process.
+        </p>
+        <br />
+        <p>
+          I have always known that I have a deep love for helping others. I
+          believe I am a naturally empathetic person, as I am always open to
+          understanding different experiences, perspectives, and the
+          complexities that come with them. My experience tutoring sixth-grade
+          students in math during high school, along with my current role as
+          Internal Vice President of UX@Berkeley, reflects my desire to not only
+          contribute meaningfully to the lives of others, but also to create
+          environments built on genuine care, trust, support, and growth. These
+          experiences are what inspire me to become a Product Design instructor.
+          I hope to share my knowledge, help students build confidence in their
+          abilities, and show them how design can be a powerful tool for
+          creating positive change.
+        </p>
+        <br />
+        <p>
+          The Outcome School’s mission to help underserved youth and minorities
+          through structured, outcome-based learning strongly reflects my values
+          as a designer, student, and human. The opportunity to make design
+          education more accessible while empowering students from diverse
+          backgrounds is something that deeply resonates with me. As a Product
+          Design instructor, I hope not only to gain professional teaching
+          experience and continue strengthening my design skills, but most
+          importantly, to provide quality guidance to my students through
+          respect, empathy, and kindness. I am excited by the opportunity to
+          support the next generation of designers and help create a learning
+          environment where every student feels valued, capable, and inspired to
+          pursue their goals.
         </p>
       </Modal>
 
