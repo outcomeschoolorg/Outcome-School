@@ -654,7 +654,7 @@ const OurVolunteer = () => {
 
                 <p
                   className="mt-10 font-medium hover:text-[#6036E1] hover:underline cursor-pointer hover:cursor-pointer"
-                  onClick={() => setOpenFrank(true)}
+                  onClick={() => setOpenCarolynCho(true)}
                 >
                   Learn More
                   <i className="fa-solid fa-greater-than text-[12px] ml-2"></i>
