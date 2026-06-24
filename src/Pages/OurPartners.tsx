@@ -4,6 +4,8 @@ import google from "../assets/images/our-partners/google.png";
 import support from "../assets/images/our-partners/support.png";
 import cisco from "../assets/images/our-partners/Cisco.jpg";
 import EDD from "../assets/images/our-partners/EDD.png";
+import ECLA from "../assets/images/our-partners/EC.png";
+import YMCA from "../assets/images/our-partners/ymca.png";
 
 const partnersData = [
   {
@@ -22,7 +24,13 @@ const partnersData = [
     images: [{ src: support, className: "h-28 sm:h-32 md:h-40" }],
   },
   { title: "Donors", images: [] },
-  { title: "Other Partners", images: [] },
+  {
+    title: "Other Partners",
+    images: [
+      { src: ECLA, className: "h-28 sm:h-19 md:h-25" },
+      { src: YMCA, className: "h-28 sm:h-19 md:h-25" },
+    ],
+  },
 ];
 const OurPartners = () => {
   return (
