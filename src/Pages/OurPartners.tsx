@@ -27,8 +27,8 @@ const partnersData = [
   {
     title: "Other Partners",
     images: [
-      { src: ECLA, className: "h-28 sm:h-19 md:h-25" },
-      { src: YMCA, className: "h-28 sm:h-19 md:h-25" },
+      { src: ECLA, className: "h-32 sm:h-19 md:h-25" },
+      { src: YMCA, className: "h-32 sm:h-19 md:h-25" },
     ],
   },
 ];
