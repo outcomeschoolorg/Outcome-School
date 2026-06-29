@@ -27,19 +27,31 @@ export const events: EventItem[] = [
     time: "9 AM - 12 PM",
     register: "https://tally.so/r/rjJAGN",
     timezone: "PT",
-    location: "700 South Flower Street, Suite 1950, Los Angeles, CA 90017",
+    location: "10200 S. Success Ave., Los Angeles, CA 90002",
     image: GameEvent,
     mapEmbed:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.8302364281094!2d-118.2614322260246!3d34.04822557315849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c7b6a63c5c51%3A0xdb2cb559771b8f32!2s700%20Flower%20St%20%23%201950%2C%20Los%20Angeles%2C%20CA%2090017!5e0!3m2!1sen!2sus!4v1778881030763!5m2!1sen!2sus",
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.886780540873!2d-118.24897999999999!3d33.944039999999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c9c4896b38ff%3A0xa98f050eb1790426!2s10200%20Success%20Ave%2C%20Los%20Angeles%2C%20CA%2090002!5e0!3m2!1sen!2sus!4v1782765268941!5m2!1sen!2sus",
     description: `
-Join Outcome School in Los Angeles for a hands-on workshop where kids ages 7–13 design and build their very first game in a fun, creative, and beginner-friendly environment.
+Join us in person for a fun, free workshop where kids get to build their very first game from scratch!
 
-🎮 What Students Will Learn:
-• Learn the basics of coding, game logic, and interactive design
-• Build a simple game using tools like Scratch, Roblox Studio, or MakeCode
-• Create characters, goals, obstacles, and scoring systems
-• Practice creativity, problem-solving, and digital confidence
-• Showcase their game at the end of the workshop
+Build Your First Game (Free Workshop for Kids)
+
+The games your kids play today could become the careers they build tomorrow. Every great game developer started with one simple project. What if your child didn't just spend hours playing games... What if they learned how to create them?
+
+At Outcome School, we're giving kids ages 7–13 the opportunity to transform curiosity into creativity through a fun, hands-on game development workshop.
+
+⭐ Your Child Will:
+🎮 Build their very first playable game
+💻 Learn coding in a beginner-friendly way
+🧠 Strengthen creativity, problem-solving, and critical thinking
+🚀 Gain confidence by creating something they can proudly showcase
+🤝 Learn from experienced mentors in a supportive environment
+This isn't just another summer activity. It's an opportunity to introduce your child to the skills behind tomorrow's fastest-growing careers in technology.
+
+🎯 Parents in Los Angeles: Give your child the chance to become a creator—not just a consumer of technology.
+🎫 Spaces are limited! Register your child today:
+
+Tag a parent who has a future game developer at home!
 
 📞 Contact the Organizer:
 Outcome School  
@@ -51,8 +63,8 @@ Student Ticket (Ages 7–13) — 11 remaining
 Each student in your family requires a ticket. Only registered students are allowed to attend the workshop due to space constraints.
 
 As parents/guardians complete the registration form, please include:
-• First and last name of the student
-• Email address of the parent/guardian completing registration
+- First and last name of the student
+- Email address of the parent/guardian completing registration
 
 📢 Outcome School Communication Policy:
 By entering your phone number and email and submitting this form, you agree to receive recurring automated promotional and marketing messages via text and email from Outcome School.
