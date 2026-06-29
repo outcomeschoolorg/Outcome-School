@@ -64,7 +64,7 @@ const TeamPage = () => {
               />
               <div className="mt-5 text-center">
                 <p className="font-bold text-[22px]  ">Nida Tazeen</p>
-                <p className="font-semibold text-[20px] mt-4">Instructor</p>
+                <p className="font-semibold text-[20px] mt-4">Software Developer</p>
               </div>
 
               <p
