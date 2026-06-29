@@ -1,24 +1,18 @@
 import { useState } from "react";
 import one from "../assets/images/angel.png";
-import zico from "../assets/images/zicoo.png";
 import two from "../assets/images/Ellipse.png";
 import Kadakia from "../assets/images/Kadakiaa.png";
 import Bhakre from "../assets/images/abhilash.png";
-import omkar from "../assets/images/omkar.png";
 import Jacqueline from "../assets/images/Jacqueline.png";
-import Pushpa from "../assets/images/Pushp.png";
-import Joseph from "../assets/images/Joseph.png";
 import Divya from "../assets/images/Divya.png";
 import Frank from "../assets/images/frank.png";
 import Yuan from "../assets/images/Yuan.png";
 import Madhumitha from "../assets/images/Madhumitha.png";
-import Bhatia from "../assets/images/Bhatia.png";
 import Vineet from "../assets/images/Vineet.png";
 import Nida from "../assets/images/Nida.png";
 import Vitor from "../assets/images/Vitor.png";
 import Ethan from "../assets/images/Ethan.png";
 import Mohamed from "../assets/images/Mohamed.png";
-import Shiyun from "../assets/images/Shiyun.png";
 import freshman from "../assets/images/freshman.png";
 import Manya from "../assets/images/Manya.jpeg";
 import BhuvaniRangesh from "../assets/images/BhuvaniRangesh.png";
@@ -33,24 +27,18 @@ import Footer from "../Component/Footer";
 const OurVolunteer = () => {
   const [openAarushi, setOpenAarushi] = useState(false);
   const [openCourtney, setOpenCourtney] = useState(false);
-  const [openZico, setOpenZico] = useState(false);
-  const [openOmkar, setOpenOmkar] = useState(false);
   const [openHrishikash, setOpenHrishikash] = useState(false);
   const [openBhakre, setOpenBhakre] = useState(false);
   const [openJacqueline, setOpenJacqueline] = useState(false);
-  const [openPushpa, setOpenPushpa] = useState(false);
-  const [openJoseph, setOpenJoseph] = useState(false);
   const [openDivya, setOpenDivya] = useState(false);
   const [openFrank, setOpenFrank] = useState(false);
   const [openYuan, setOpenYuan] = useState(false);
   const [openMadhumitha, setOpenMadhumitha] = useState(false);
-  const [openBhatia, setOpenBhatia] = useState(false);
   const [openVineet, setOpenVineet] = useState(false);
   const [openNida, setOpenNida] = useState(false);
   const [openVitor, setOpenVitor] = useState(false);
   const [openEthan, setOpenEthan] = useState(false);
   const [openMohamed, setOpenMohamed] = useState(false);
-  const [openShiyun, setOpenShiyun] = useState(false);
   const [openfreshman, setOpenfreshman] = useState(false);
   const [openManya, setOpenManya] = useState(false);
   const [openBhuvaniRangesh, setOpenBhuvaniRangesh] = useState(false);
@@ -99,27 +87,6 @@ const OurVolunteer = () => {
 
               <div className="bg-[#F4F4FE] rounded-[10px] px-8  py-14 ">
                 <img
-                  src={zico}
-                  alt="one"
-                  className="text-center mx-auto rounded-full w-[50%]  object-cover"
-                />
-
-                <div className="mt-5 text-center">
-                  <p className="font-bold text-[22px]  "> Zico Bornelus</p>
-                  <p className="font-semibold text-[20px] mt-4 ">Instructor</p>
-                </div>
-
-                <p
-                  className="mt-10 font-medium hover:text-[#6036E1] hover:underline cursor-pointer hover:cursor-pointer"
-                  onClick={() => setOpenZico(true)}
-                >
-                  Learn More
-                  <i className="fa-solid fa-greater-than text-[12px] ml-2"></i>
-                </p>
-              </div>
-
-              <div className="bg-[#F4F4FE] rounded-[10px] px-8  py-14 ">
-                <img
                   src={Kadakia}
                   alt="one"
                   className="text-center mx-auto rounded-full w-[50%]  object-cover"
@@ -141,11 +108,6 @@ const OurVolunteer = () => {
                   <i className="fa-solid fa-greater-than text-[12px] ml-2"></i>
                 </p>
               </div>
-            </div>
-          </div>
-
-          <div className="mt-10">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6  mx-auto item-center  justify-center mt-4">
               <div className="bg-[#F4F4FE] rounded-[10px] px-8  py-14 ">
                 <img
                   src={two}
@@ -166,7 +128,13 @@ const OurVolunteer = () => {
                   <i className="fa-solid fa-greater-than text-[12px] ml-2"></i>
                 </p>
               </div>
+            </div>
+          </div>
 
+          <div className="mt-10"></div>
+
+          <div className="mt-10">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6  mx-auto item-center  justify-center mt-4">
               <div className="bg-[#F4F4FE] rounded-[10px] px-8  py-14 ">
                 <img
                   src={Jacqueline}
@@ -187,53 +155,6 @@ const OurVolunteer = () => {
                   <i className="fa-solid fa-greater-than text-[12px] ml-2"></i>
                 </p>
               </div>
-
-              <div className="bg-[#F4F4FE] rounded-[10px] px-8  py-14 ">
-                <img
-                  src={Pushpa}
-                  alt="one"
-                  className="text-center mx-auto rounded-full w-[50%]  object-cover"
-                />
-
-                <div className="mt-5 text-center">
-                  <p className="font-bold text-[22px]  "> Pushpa Latha </p>
-                  <p className="font-semibold text-[20px] mt-4">Instructor</p>
-                </div>
-
-                <p
-                  className="mt-10 font-medium hover:text-[#6036E1] hover:underline cursor-pointer hover:cursor-pointer"
-                  onClick={() => setOpenPushpa(true)}
-                >
-                  Learn More
-                  <i className="fa-solid fa-greater-than text-[12px] ml-2"></i>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="mt-10">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6  mx-auto item-center  justify-center mt-4">
-              <div className="bg-[#F4F4FE] rounded-[10px] px-8  py-14 ">
-                <img
-                  src={omkar}
-                  alt="one"
-                  className="text-center mx-auto rounded-full w-[50%]  object-cover"
-                />
-
-                <div className="mt-5 text-center">
-                  <p className="font-bold text-[22px]  ">Omkar Sonmali</p>
-                  <p className="font-semibold text-[20px] mt-4">Instructor</p>
-                </div>
-
-                <p
-                  className="mt-10 font-medium hover:text-[#6036E1] hover:underline cursor-pointer hover:cursor-pointer"
-                  onClick={() => setOpenOmkar(true)}
-                >
-                  Learn More
-                  <i className="fa-solid fa-greater-than text-[12px] ml-2"></i>
-                </p>
-              </div>
-
               <div className="bg-[#F4F4FE] rounded-[10px] px-8  py-14 ">
                 <img
                   src={Bhakre}
@@ -254,32 +175,6 @@ const OurVolunteer = () => {
                   <i className="fa-solid fa-greater-than text-[12px] ml-2"></i>
                 </p>
               </div>
-
-              <div className="bg-[#F4F4FE] rounded-[10px] px-8  py-14 ">
-                <img
-                  src={Joseph}
-                  alt="one"
-                  className="text-center mx-auto rounded-full w-[50%]  object-cover"
-                />
-
-                <div className="mt-5 text-center">
-                  <p className="font-bold text-[22px]  ">Joseph Boadi</p>
-                  <p className="font-semibold text-[20px] mt-4">Instructor</p>
-                </div>
-
-                <p
-                  className="mt-10 font-medium hover:text-[#6036E1] hover:underline cursor-pointer hover:cursor-pointer"
-                  onClick={() => setOpenJoseph(true)}
-                >
-                  Learn More
-                  <i className="fa-solid fa-greater-than text-[12px] ml-2"></i>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="mt-10">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6  mx-auto item-center  justify-center mt-4">
               <div className="bg-[#F4F4FE] rounded-[10px] px-8  py-14 ">
                 <img
                   src={Divya}
@@ -300,7 +195,11 @@ const OurVolunteer = () => {
                   <i className="fa-solid fa-greater-than text-[12px] ml-2"></i>
                 </p>
               </div>
+            </div>
+          </div>
 
+          <div className="mt-10">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6  mx-auto item-center  justify-center mt-4">
               <div className="bg-[#F4F4FE] rounded-[10px] px-8  py-14 ">
                 <img
                   src={Frank}
@@ -340,6 +239,28 @@ const OurVolunteer = () => {
                   <i className="fa-solid fa-greater-than text-[12px] ml-2"></i>
                 </p>
               </div>
+              <div className="bg-[#F4F4FE] rounded-[10px] px-8  py-14 ">
+                <img
+                  src={LydiaIgnatova}
+                  alt="LydiaIgnatova"
+                  className="text-center mx-auto rounded-full w-[50%]  object-cover"
+                />
+
+                <div className="mt-5 text-center">
+                  <p className="font-bold text-[22px]  ">Lydia Ignatova</p>
+                  <p className="font-semibold text-[20px] mt-4 ">
+                    Robotics Engineering Instructor
+                  </p>
+                </div>
+
+                <p
+                  className="mt-10 font-medium hover:text-[#6036E1] hover:underline cursor-pointer hover:cursor-pointer"
+                  onClick={() => setOpenLydiaIgnatova(true)}
+                >
+                  Learn More
+                  <i className="fa-solid fa-greater-than text-[12px] ml-2"></i>
+                </p>
+              </div>
             </div>
           </div>
 
@@ -369,26 +290,6 @@ const OurVolunteer = () => {
 
               <div className="bg-[#F4F4FE] rounded-[10px] px-8  py-14 ">
                 <img
-                  src={Bhatia}
-                  alt="one"
-                  className="text-center mx-auto rounded-full w-[50%]  object-cover"
-                />
-                <div className="mt-5 text-center">
-                  <p className="font-bold text-[22px]  ">Bhatia Upasana </p>
-                  <p className="font-semibold text-[20px] mt-4">Instructor</p>
-                </div>
-
-                <p
-                  className="mt-10 font-medium hover:text-[#6036E1] hover:underline cursor-pointer hover:cursor-pointer"
-                  onClick={() => setOpenBhatia(true)}
-                >
-                  Learn More
-                  <i className="fa-solid fa-greater-than text-[12px] ml-2"></i>
-                </p>
-              </div>
-
-              <div className="bg-[#F4F4FE] rounded-[10px] px-8  py-14 ">
-                <img
                   src={Vineet}
                   alt="one"
                   className="text-center mx-auto rounded-full w-[50%]  object-cover"
@@ -401,6 +302,25 @@ const OurVolunteer = () => {
                 <p
                   className="mt-10 font-medium hover:text-[#6036E1] hover:underline cursor-pointer hover:cursor-pointer"
                   onClick={() => setOpenVineet(true)}
+                >
+                  Learn More
+                  <i className="fa-solid fa-greater-than text-[12px] ml-2"></i>
+                </p>
+              </div>
+              <div className="bg-[#F4F4FE] rounded-[10px] px-8  py-14 ">
+                <img
+                  src={CarolynCho}
+                  alt=""
+                  className="text-center mx-auto rounded-full w-[45%]  object-cover"
+                />
+                <div className="mt-5 text-center">
+                  <p className="font-bold text-[22px]  ">Carolyn Cho</p>
+                  <p className="font-semibold text-[20px] mt-4">Instructor</p>
+                </div>
+
+                <p
+                  className="mt-10 font-medium hover:text-[#6036E1] hover:underline cursor-pointer hover:cursor-pointer"
+                  onClick={() => setOpenCarolynCho(true)}
                 >
                   Learn More
                   <i className="fa-solid fa-greater-than text-[12px] ml-2"></i>
@@ -494,27 +414,6 @@ const OurVolunteer = () => {
                   <i className="fa-solid fa-greater-than text-[12px] ml-2"></i>
                 </p>
               </div>
-
-              <div className="bg-[#F4F4FE] rounded-[10px] px-8  py-14 ">
-                <img
-                  src={Shiyun}
-                  alt="one"
-                  className="text-center mx-auto rounded-full w-[50%]  object-cover"
-                />
-                <div className="mt-5 text-center">
-                  <p className="font-bold text-[22px]">Shiyun Liu</p>
-                  <p className="font-semibold text-[20px] mt-4">Instructor</p>
-                </div>
-
-                <p
-                  className="mt-10 font-medium hover:text-[#6036E1] hover:underline cursor-pointer hover:cursor-pointer"
-                  onClick={() => setOpenShiyun(true)}
-                >
-                  Learn More
-                  <i className="fa-solid fa-greater-than text-[12px] ml-2"></i>
-                </p>
-              </div>
-
               <div className="bg-[#F4F4FE] rounded-[10px] px-8  py-14 ">
                 <img
                   src={freshman}
@@ -619,47 +518,6 @@ const OurVolunteer = () => {
                   <i className="fa-solid fa-greater-than text-[12px] ml-2"></i>
                 </p>
               </div>
-              <div className="bg-[#F4F4FE] rounded-[10px] px-8  py-14 ">
-                <img
-                  src={LydiaIgnatova}
-                  alt="LydiaIgnatova"
-                  className="text-center mx-auto rounded-full w-[50%]  object-cover"
-                />
-
-                <div className="mt-5 text-center">
-                  <p className="font-bold text-[22px]  ">Lydia Ignatova</p>
-                  <p className="font-semibold text-[20px] mt-4 ">
-                    Robotics Engineering Instructor
-                  </p>
-                </div>
-
-                <p
-                  className="mt-10 font-medium hover:text-[#6036E1] hover:underline cursor-pointer hover:cursor-pointer"
-                  onClick={() => setOpenLydiaIgnatova(true)}
-                >
-                  Learn More
-                  <i className="fa-solid fa-greater-than text-[12px] ml-2"></i>
-                </p>
-              </div>
-              <div className="bg-[#F4F4FE] rounded-[10px] px-8  py-14 ">
-                <img
-                  src={CarolynCho}
-                  alt=""
-                  className="text-center mx-auto rounded-full w-[45%]  object-cover"
-                />
-                <div className="mt-5 text-center">
-                  <p className="font-bold text-[22px]  ">Carolyn Cho</p>
-                  <p className="font-semibold text-[20px] mt-4">Instructor</p>
-                </div>
-
-                <p
-                  className="mt-10 font-medium hover:text-[#6036E1] hover:underline cursor-pointer hover:cursor-pointer"
-                  onClick={() => setOpenCarolynCho(true)}
-                >
-                  Learn More
-                  <i className="fa-solid fa-greater-than text-[12px] ml-2"></i>
-                </p>
-              </div>
             </div>
           </div>
         </div>
@@ -696,39 +554,6 @@ const OurVolunteer = () => {
       </Modal>
 
       <Modal
-        isOpen={openZico}
-        onClose={() => setOpenZico(false)}
-        title="Zico Bornelus"
-        imageSrc={zico}
-        linkedinUrl="https://www.linkedin.com/in/zicobornelus/"
-      >
-        <p>
-          I am a Full-Stack Software Engineer and CompTIA Security+ certified
-          professional. With over four years of experience in the industry, I
-          have worked on a range of projects, from modernizing legacy systems to
-          building secure, scalable applications for fintech and digital
-          transformation initiatives.
-        </p>
-        <br />
-        <p>
-          My technology journey started exactly where you are right now: with
-          HTML and CSS. I got into web development because I was fascinated by
-          the ability to build something from nothing. I loved the immediate
-          gratification of writing code and watching a blank page transform into
-          a structured, visual experience.
-        </p>
-        <br />
-        <p>
-          I am here to help you build your foundation because I know exactly
-          what it takes to break into this industry. My biggest lesson for
-          students is simple: keep working hard and build as many different
-          projects as you can. Hands-on experience is the best teacher, and a
-          strong portfolio of projects is the best way to prove your skills to
-          future employers.
-        </p>
-      </Modal>
-
-      <Modal
         isOpen={openCourtney}
         onClose={() => setOpenCourtney(false)}
         title="Dr. Courtney Powell"
@@ -751,28 +576,6 @@ const OurVolunteer = () => {
           create an engaging, inclusive, and supportive environment where
           students feel comfortable asking questions, experimenting, and
           growing.
-        </p>
-      </Modal>
-
-      <Modal
-        isOpen={openOmkar}
-        onClose={() => setOpenOmkar(false)}
-        title="Omkar Sonmali"
-        imageSrc={omkar}
-        linkedinUrl="https://www.linkedin.com/in/omkar-sonmali/details/education/"
-      >
-        <p>
-          I’m a UX Designer and Researcher focused on creating user-centered,
-          research-driven digital experiences. I was born and raised in Mumbai,
-          India and moved to the US for my Masters in HCI.
-        </p>
-        <br />
-        <p>
-          I was drawn to into UX/UI Design as I was curious about how people
-          interact with technology and how thoughtful design can make complex
-          systems feel intuitive and human. My work spans usability testing,
-          interaction design, and prototyping across AR/VR, Digital 2D
-          interfaces, and accessibility.
         </p>
       </Modal>
 
@@ -879,63 +682,6 @@ https://www.linkedin.com/in/jacquelinekoerner?utm_source=share&utm_campaign=shar
           leadership, I bring a human-centered approach to my work and I’m
           excited to partner with Outcome School to support students breaking
           into tech.
-        </p>
-      </Modal>
-
-      <Modal
-        isOpen={openPushpa}
-        onClose={() => setOpenPushpa(false)}
-        title="Pushpa Latha "
-        imageSrc={Pushpa}
-        linkedinUrl=" https://www.linkedin.com/in/pushpa-latha?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app "
-      >
-        <p>
-          I am a Software Engineer and Python instructor with a strong academic
-          and professional background in computer science. I hold a Master’s
-          degree in Computer Science, where my interest in programming,
-          problem-solving, and object-oriented design really took shape. During
-          my studies, I was introduced to Python, and I was drawn to its
-          simplicity, readability, and ability to solve problems efficiently.
-          That experience is what motivated me to continue working with Python
-          professionally.
-        </p>
-        <br />
-        <p>
-          I have worked with organizations such as JP Morgan Chase and Zensar
-          Technologies, where I used Python extensively for backend development,
-          automation, database integration, and building scalable applications
-          using advanced OOP principles. My experience also includes working in
-          Agile environments, designing APIs, writing clean and maintainable
-          code, and collaborating closely with cross-functional teams.
-        </p>
-        <br />
-        <p>
-          As an instructor, I am passionate about teaching Python in a clear,
-          practical, and structured way. I focus on building strong fundamentals
-          while connecting concepts to real-world use cases, so students gain
-          both confidence and industry-relevant skills. My goal is to help
-          students understand not just how to write code, but how to think like
-          software developers and apply Python effectively in their careers.
-        </p>
-      </Modal>
-
-      <Modal
-        isOpen={openJoseph}
-        onClose={() => setOpenJoseph(false)}
-        title="Joseph Boadi"
-        imageSrc={Joseph}
-        linkedinUrl="https://www.linkedin.com/in/josephboadi7/"
-      >
-        <p>
-          A soon-to-be Computer Science graduate focused on backend systems. I
-          teach Python because I enjoy helping people see that coding isn’t as
-          intimidating as it seems once you break it down step by step.
-        </p>
-        <br />
-        <p>
-          I value the hands-on approach here. Instead of staying in theory,
-          students actually build real projects, and that’s where real
-          confidence comes from.
         </p>
       </Modal>
 
@@ -1069,39 +815,6 @@ https://www.linkedin.com/in/jacquelinekoerner?utm_source=share&utm_campaign=shar
         <br />
       </Modal>
 
-      <Modal
-        isOpen={openBhatia}
-        onClose={() => setOpenBhatia(false)}
-        title="Bhatia Upasana"
-        imageSrc={Bhatia}
-        linkedinUrl="https://www.linkedin.com/in/upasana02/"
-      >
-        <p>
-          I’m a Data and Software Engineer with experience in data engineering,
-          backend development, and data analysis. I have worked in fast-paced
-          environments where I’ve built and contributed to real-world
-          applications from the ground up. Along the way, I’ve also had the
-          opportunity to mentor and train people through hands-on work, which
-          sparked my interest in teaching and simplifying complex tech concepts.
-        </p>{" "}
-        <br />
-        <p>
-          I chose to become a Tech Skills Instructor and Curriculum Developer
-          because I genuinely enjoy helping others grow especially by breaking
-          down technical topics into practical, easy-to-understand learning. I
-          believe the right guidance and structured learning can make a huge
-          difference in someone’s career journey.
-        </p>
-        <br />
-        <p>
-          I joined Outcome School because of its strong focus on practical,
-          outcome-driven learning and its mission to truly prepare individuals
-          for real-world tech roles. I’m excited to contribute by creating
-          meaningful content and supporting learners in building the skills and
-          confidence they need to succeed.
-        </p>{" "}
-        <br />
-      </Modal>
       <Modal
         isOpen={openVineet}
         onClose={() => setOpenVineet(false)}
@@ -1262,37 +975,6 @@ https://www.linkedin.com/in/jacquelinekoerner?utm_source=share&utm_campaign=shar
           to become a Robotics Engineering Instructor and join Outcome School,
           where I can help others discover the same joy in building,
           experimenting, and solving real-world problems.
-        </p>
-      </Modal>
-
-      <Modal
-        isOpen={openShiyun}
-        onClose={() => setOpenShiyun(false)}
-        title="Shiyun Liu"
-        imageSrc={Shiyun}
-        linkedinUrl="https://www.linkedin.com/in/shiyun-liu-978b67354"
-      >
-        <p>
-          I’m a product designer based in New York, drawn to the space where
-          technology meets human stories. My work is rooted in creating
-          experiences that feel intuitive, but also personal design that people
-          can actually feel, not just use.
-        </p>{" "}
-        <br />
-        <p>
-          I became a designer because I wanted to make things more accessible,
-          turning complexity into clarity, and distance into connection.
-          Teaching, for me, is a continuation of that. It’s about opening doors,
-          sharing ways of thinking, and helping others see that they belong in
-          this space.
-        </p>{" "}
-        <br />
-        <p>
-          I joined Outcome School as a Product Design curriculum developer and
-          instructor because it’s not just about learning—it’s about real
-          change. It creates paths where there used to be barriers. I’m excited
-          to be part of something that gives people not just skills, but a sense
-          of possibility.
         </p>
       </Modal>
 
