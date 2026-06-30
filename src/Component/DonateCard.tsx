@@ -32,7 +32,7 @@ export default function DonateCard() {
             Donate with various options
           </p>
           <p className="m-0 mt-0.5 text-xs text-[#3C3489]">
-            Paypal, Apple Pay, Credit, Debit Card or Venmo
+            Paypal, Apple Pay, Credit & Debit Card or Venmo
           </p>
         </span>
         <span className="text-neutral-400" aria-hidden="true">
