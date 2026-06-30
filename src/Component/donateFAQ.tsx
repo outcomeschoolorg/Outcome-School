@@ -1,6 +1,4 @@
 import { useState } from "react";
-import Footer from "../Component/Footer";
-import NavBar from "../Component/NavBar";
 
 const faqs = [
   {
@@ -40,11 +38,9 @@ const DonateFAQ = () => {
   };
   return (
     <>
-      <NavBar />
-
       <div className="bg-white">
-        <div className="container px-10 pt-[10em] py-10 mx-auto items-center ">
-          <section className="py-10  ">
+        <div className="container px-10 py-10 mx-auto items-center ">
+          <section>
             <h2 className="text-[28px] font-bold  mb-12  tracking-wide">
               Frequently Asked Questions
             </h2>
@@ -80,48 +76,8 @@ const DonateFAQ = () => {
               ))}
             </div>
           </section>
-
-          <div className="mt-10">
-            <p className="text-center text-[36px] font-medium">
-              Ready to Partner With Us?
-            </p>
-            <p className="my-5 w-[90%] ">
-              Connect with our Employer Partnerships team to explore hiring,
-              apprenticeship collaboration, or volunteer engagement—and join us
-              in building a more inclusive tech industry.
-            </p>
-          </div>
-
-          <div className="mt-10">
-            <p className="text-center text text-[36px] font-medium">
-              Tandem Apprenticeship
-            </p>
-            <p className="my-5  ">
-              Multiply opportunity and boost productivity with every line of
-              code.
-            </p>
-            <p className="my-5  ">
-              Tandem is Outcome School’s managed apprenticeship program built to
-              help companies strengthen their teams now while developing a
-              long-term, sustainable tech talent pipeline. In just a few months,
-              partners can increase engineering capacity while opening
-              life-changing opportunities for emerging professionals—including
-              software developers, cybersecurity analysts, AI engineers, game
-              developers, and more.
-            </p>
-            <p className="my-5  ">Become a partner</p>
-            <p className="my-5  ">
-              <i className="fa-solid fa-download text-xl"></i>{" "}
-              <span className="text font-medium">
-                {" "}
-                Download program details{" "}
-              </span>
-            </p>
-          </div>
         </div>
       </div>
-
-      <Footer />
     </>
   );
 };

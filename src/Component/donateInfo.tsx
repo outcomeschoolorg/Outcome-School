@@ -1,7 +1,7 @@
 const DonateInfo = () => {
   return (
     <div className="p-4 flex-1 lg:flex-[6]">
-      <p className="mb-6">
+      <p className="mb-2">
         <span className="font-bold text-purple-700">
           EMPOWERING UNDERSERVED YOUTH'S FUTURE THROUGH TECH
         </span>

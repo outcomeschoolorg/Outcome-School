@@ -36,7 +36,7 @@ const Donate = () => {
         </div>
         <div className="flex flex-col lg:flex-row pl-10 pr-10 ">
           <DonateInfo />
-          <div className="flex flex-col gap-4 flex-1 lg:flex-[3] mb-6">
+          <div className="flex flex-col gap-4 flex-1 lg:flex-[3]">
             <DonateCard />
 
             {/* CONTRIBUTORS */}
@@ -68,8 +68,9 @@ const Donate = () => {
             </div>
           </div>
         </div>
+        <DonateFAQ />
       </div>
-      <DonateFAQ />
+
       <Footer />
     </>
   );
