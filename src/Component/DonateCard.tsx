@@ -51,7 +51,7 @@ export default function DonateCard() {
         </span>
         <span className="min-w-0 flex-1">
           <p className="m-0 text-[15px] font-semibold text-neutral-900">
-            Pay with Cash App
+            Donate with Cash App
           </p>
           <p className="m-0 mt-0.5 text-xs text-neutral-500">{CASHAPP_TAG}</p>
         </span>
@@ -70,7 +70,7 @@ export default function DonateCard() {
         </span>
         <span className="min-w-0 flex-1">
           <p className="m-0 text-[15px] font-semibold text-neutral-900">
-            Pay with Zelle
+            Donate with Zelle
           </p>
           <p className="m-0 mt-0.5 text-xs text-neutral-500">Show details</p>
         </span>
