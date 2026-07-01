@@ -77,8 +77,7 @@ const DonateInfo = () => {
             donation to sustain our programs year-round.
           </p>
           <p>
-            Together, we can help refugees and migrants in Los Angeles build the
-            skills and confidence to thrive in tech, and in life.
+            Together, we can help underserved youths in Los Angeles and other cities in the United States build the skills and confidence to thrive in tech, and in life.
           </p>
         </div>
       </div>
