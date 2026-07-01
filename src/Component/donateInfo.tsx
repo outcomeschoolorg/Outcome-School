@@ -1,56 +1,72 @@
 const DonateInfo = () => {
   return (
     <div className="p-4 flex-1 lg:flex-[6]">
-      <p className="mb-6">
-        Underrepresented young people of color in Los Angeles and rest of the
-        country face immense challenges in getting opportunities in the
-        technology space. But with the right skills and support, they can unlock
-        opportunities to thrive in the tech industry.{" "}
+      <p className="mb-2">
+        <span className="font-bold text-purple-700">
+          EMPOWERING UNDERSERVED YOUTH'S FUTURE THROUGH TECH
+        </span>
       </p>
       <p className="mb-6">
-        Your donation to Outcome School Los Angeles helps us provide free
-        digital education, mentorship, and career support, empowering students
-        to build brighter futures in one of the world’s most dynamic tech hubs.
+        Outcome School career pathway's programs are made possible by generous
+        corporate sponsors, organizations and individual donors.
       </p>
       <h2 className="font-bold">What Your Gift Can Do</h2>
       <div className="mb-4 space-y-4">
         <p>
           {" "}
-          <span className="font-bold text-purple-700">$50 – </span>Empower
-          Change - Provide essential tech training or help a young mother in our
-          Program pursue her dreams with childcare support during her Outcome
-          School course.{" "}
+          <span className="font-bold text-purple-700">$5,000 – </span>Sponsors
+          one student through the 48 weeks career pathway program.{" "}
         </p>
         <p>
-          <span className="font-bold text-purple-700"> $100 –</span> Shape
-          Futures - Connect a student with a mentor or fund a month of
-          education.
+          <span className="font-bold text-purple-700"> $2,500 – </span>Sponsors
+          one student to complete level 1 and the level 2 tech program.
         </p>
         <p>
           {" "}
-          <span className="font-bold text-purple-700">$250 – </span>Equip
-          Innovation - Supply a classroom with interactive learning tools.
+          <span className="font-bold text-purple-700">$1,000 – </span>Provides
+          on-going career support for 5 alumni to secure a tech internship and
+          job.
         </p>
         <p>
           {" "}
-          <span className="font-bold text-purple-700">$600 –</span> Inspire
-          Young Minds - Sponsor a 2-day holiday tech camp.
+          <span className="font-bold text-purple-700">$500 – </span>Supports a
+          student stipend in our cohort bootcamp
         </p>
         <p>
           {" "}
-          <span className="font-bold text-purple-700">$1500 – </span>
-          Transform Lives - Support one learner through an entire semester.
+          <span className="font-bold text-purple-700">$250 – </span>
+          Provides a laptop for a student
+        </p>
+        <p>
+          {" "}
+          <span className="font-bold text-purple-700">$100 – </span>
+          Helps cover student access to our online coding and technology
+          platforms.
         </p>
 
         <h2 className="font-bold">
-          Contribute to a More Inclusive Tech Future
+          Genius is equally distributed. Opportunity is not.
         </h2>
         <div className="mb-4 space-y-4">
           <p>
-            At Outcome School Los Angeles, we believe that everyone, regardless
-            of background, deserves access to quality tech education. Your
-            donation helps people who’ve faced unimaginable challenges find
-            hope, opportunity, and community through technology.
+            Technology is reshaping the workforce and the young people with the
+            least access will bear the greatest cost. That is not inevitable. It
+            is a choice. Your investment changes it.
+          </p>
+          <p>
+            Underestimated young people do not need to be discovered. They need
+            to be resourced. Fund them, and watch what they build.
+          </p>
+          <p>
+            The next generation of technologists and creators are already here.
+            They just need you. Invest now — and give them the experience to
+            prove it
+          </p>
+
+          <p>
+            If you are a company or organization interested in partnering at a
+            deeper level, please reach out to info@outcomeschool.org and we can
+            set up a call to discuss corporate partnerships.
           </p>
         </div>
 
