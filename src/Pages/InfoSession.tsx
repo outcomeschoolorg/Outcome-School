@@ -25,7 +25,7 @@ const InfoSession = () => {
           </div>
           <p className="text-[18px] my-5">
             Want to learn more about Outcome School? Join one of our{" "}
-            <span className="text"> 60-minute information </span> sessions to
+            <span className="text"> 30-minute information </span> sessions to
             hear about our mission, application process, program outcomes, and
             what to expect as a student. You’ll also have time to ask questions
             directly with our team.
@@ -37,7 +37,7 @@ const InfoSession = () => {
           <div className="flex flex-col lg:flex-row items-center justify-between my-10 ">
             <div>
               <p className="text-[18px] font-medium my-5">
-                Summer 2026 Info Sessions
+                2026 Info Sessions
               </p>
               <p className="text-[18px] my-5">
                 {" "}
@@ -46,7 +46,7 @@ const InfoSession = () => {
               </p>
               <p className="text-[18px] my-5">
                 {" "}
-                <span className="font-medium"> Register: </span> Register here
+                <span className="font-medium">Book an Info Session </span> <a href="https://calendar.app.google/Ek3fmMZLyPBwTwa57" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline"> here </a>
               </p>
             </div>
             <img src={image} alt="info" className="w-100" />
