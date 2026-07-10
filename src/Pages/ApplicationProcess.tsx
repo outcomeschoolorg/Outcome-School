@@ -85,7 +85,7 @@ const ApplicationProcess = () => {
           <div className="border border-black">
             <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-4 mt-10 mb-8 items-center justify-center mx-auto px-16">
               <div className="text-center">
-                <div className="bg-[#7D65ED] rounded-[10px] px-3 py-3 mx-auto">
+                <div className="border border-black rounded-[10px] px-4 py-2 lg:py-3 mx-auto">
                   <p className="text-white text-[20px] lg:text-[24px] font-regular">
                     Summer 2026
                   </p>
@@ -93,7 +93,7 @@ const ApplicationProcess = () => {
                 <p className="text-red-600 text-sm mt-2">Closed</p>
               </div>
               <div className="text-center">
-                <div className="border border-black rounded-[10px] px-4 py-2 lg:py-3 mx-auto">
+                <div className="bg-[#7D65ED] rounded-[10px] px-3 py-3 mx-auto">
                   <p className="text-black text-[24px] font-regular">
                     Fall 2026
                   </p>
