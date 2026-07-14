@@ -2,6 +2,7 @@ import Samson from "../assets/images/samson.png";
 import Sharon from "../assets/images/sharon.png";
 import DonaldDea from "../assets/images/Donald Dea.png";
 import RamonaJSmith from "../assets/images/Ramona J Smith.png";
+import AngelicaTolentino from "../assets/images/AngelicaTolentino.png";
 
 import { useState } from "react";
 import NavBar from "../Component/NavBar";
@@ -48,6 +49,14 @@ const DirectorsData: Director[] = [
     description:
       "serves on Outcome School’s Board of Directors, bringing more than two decades of experience in strategy, research, evaluation, governance, and equity-driven innovation. As Principal of TERSHA LLC, she uses data storytelling, systems thinking, and human-centered design to help mission-aligned organizations strengthen impact and serve communities more effectively. Her career spans leadership and advisory work with the U.S. Department of Homeland Security, the Centers for Disease Control and Prevention, philanthropic networks, and civil society organizations. With expertise in culturally responsive design, developmental evaluation, language access, accessibility, community health, and workforce development, Dr. Sharon brings analytical rigor and a deep commitment to amplifying structurally underrepresented voices. At Outcome School, she supports the mission of empowering underrepresented young people through thoughtful governance, inclusive strategy, and a belief in creating pathways that help individuals and communities thrive. She holds a Ph.D. in Health Policy and an M.P.H. from the University of Texas School of Public Health.",
     linkedinUrl: "https://www.linkedin.com/in/sharonattipoe-dorcoo/",
+  },
+  {
+    name: "Angelica Tolentino",
+    img: AngelicaTolentino,
+    title: "CPA",
+    description:
+      "CPA, serves on Outcome School’s Board of Directors, bringing more than a decade of experience in leadership, organizational effectiveness, talent development, and cross-functional team management. As a Senior Manager at Vialto Partners, she has built a strong track record of guiding teams, strengthening operations, and helping organizations perform more effectively. Beyond her professional work, Angelica is deeply committed to mentorship, leadership development, and expanding access to opportunity for students and emerging professionals. Her community leadership reflects a strong belief in the power of collaboration to support young people. Most recently, she served as Program Director for a community-based implementation of Toastmasters International’s Youth Leadership Program, bringing together Toastmasters leaders, the Anderson Munger Family YMCA, and Rotary-affiliated community partners to help local high school students strengthen their communication and leadership skills. At Outcome School, Angelica supports the mission of empowering underserved youth through thoughtful governance, strategic partnerships, and a commitment to helping more young people build the skills, confidence, and professional connections needed to thrive in their careers and communities.",
+    linkedinUrl: "https://www.linkedin.com/in/angelicarossanatolentino/",
   },
 ];
 const BoardDirector = () => {
