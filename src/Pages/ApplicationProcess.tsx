@@ -123,7 +123,7 @@ const ApplicationProcess = () => {
                 <img src={Summer} alt="clock" className="w-100 mb-4" />
               </div>
               <div className="mb-3">
-                <p className="text-start text-[32px] font-bold">Summer 2026</p>
+                <p className="text-start text-[32px] font-bold">Fall 2026</p>
                 <p className="text-[18px] my-3">
                   Application Deadline: 2 weeks before the program start date
                 </p>
@@ -134,7 +134,7 @@ const ApplicationProcess = () => {
                   Results Date: 3 days after your pre-work submission
                 </p>
                 <p className="text-[18px] my-3">
-                  Class date: July 2nd, 2026 - September 23rd, 2026
+                  Class date: October 5th, 2026 - December 23th, 2026
                 </p>
               </div>
             </div>
