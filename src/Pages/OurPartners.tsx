@@ -6,6 +6,7 @@ import cisco from "../assets/images/our-partners/Cisco.jpg";
 import EDD from "../assets/images/our-partners/EDD.png";
 import ECLA from "../assets/images/our-partners/EC.png";
 import YMCA from "../assets/images/our-partners/ymca.png";
+import canes from "../assets/images/our-partners/canes.png";
 
 const partnersData = [
   {
@@ -21,9 +22,12 @@ const partnersData = [
   },
   {
     title: "In-Kind Support Partners",
-    images: [{ src: support, className: "h-28 sm:h-32 md:h-40" }],
+    images: [{ src: support, className: "h-25 sm:h-32 md:h-40" }],
   },
-  { title: "Donors", images: [] },
+  {
+    title: "Donors",
+    images: [{ src: canes, className: "h-28 sm:h-32 md:h-40" }],
+  },
   {
     title: "Other Partners",
     images: [
