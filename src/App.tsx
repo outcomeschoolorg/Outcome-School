@@ -66,6 +66,7 @@ import BlogEventsDetails from "./Pages/BlogEventsDetails";
 import CompanyPolicies from "./Pages/CompanyPolicies";
 import OurPartners from "./Pages/OurPartners";
 import Workshops from "./Pages/Workshops";
+import StrategicAdvisoryCouncil from "./Pages/StrategicAdvisoryCouncil";
 const App = () => {
   return (
     <>
@@ -191,6 +192,10 @@ const App = () => {
           <Route path="/robotics-level6" element={<RoboticsLevel6 />} />
           <Route path="/our-partners" element={<OurPartners />} />
           <Route path="/workshops" element={<Workshops />} />
+          <Route
+            path="/StrategicAdvisoryCouncil"
+            element={<StrategicAdvisoryCouncil />}
+          />
         </Routes>
       </Router>
 
