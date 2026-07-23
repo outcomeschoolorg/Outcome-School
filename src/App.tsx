@@ -67,6 +67,7 @@ import CompanyPolicies from "./Pages/CompanyPolicies";
 import OurPartners from "./Pages/OurPartners";
 import Workshops from "./Pages/Workshops";
 import StrategicAdvisoryCouncil from "./Pages/StrategicAdvisoryCouncil";
+import OutcomeSchool from "./Pages/OutcomeSchool";
 const App = () => {
   return (
     <>
@@ -196,6 +197,7 @@ const App = () => {
             path="/StrategicAdvisoryCouncil"
             element={<StrategicAdvisoryCouncil />}
           />
+          <Route path="/OutcomeSchool" element={<OutcomeSchool />} />
         </Routes>
       </Router>
 
