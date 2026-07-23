@@ -188,6 +188,13 @@ const NavBar: React.FC = () => {
                 >
                   Our Partners
                 </Link>
+                <Link
+                  to="/StrategicAdvisoryCouncil"
+                  className="block px-4 py-2 hover:bg-gray-200"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Strategic Advisory Council
+                </Link>
               </div>
             )}
           </div>
@@ -398,6 +405,13 @@ const NavBar: React.FC = () => {
                 onClick={() => setIsOpen(false)}
               >
                 Our Partners
+              </Link>
+              <Link
+                to="/StrategicAdvisoryCouncil"
+                className="block px-4 py-2 hover:bg-gray-200"
+                onClick={() => setIsOpen(false)}
+              >
+                Strategic Advisory Council
               </Link>
             </div>
           )}

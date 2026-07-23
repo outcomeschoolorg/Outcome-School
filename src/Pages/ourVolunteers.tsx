@@ -20,6 +20,10 @@ import ManukMinasyan from "../assets/images/ManukMinasyan.jpg";
 import TammyCalderaro from "../assets/images/TammyCalderaro.jpg";
 import LydiaIgnatova from "../assets/images/LydiaIgnatova.png";
 import CarolynCho from "../assets/images/CarolynCho.jpeg";
+import John from "../assets/images/John.jpg";
+import Deepa from "../assets/images/Deepa.png";
+import Annie from "../assets/images/Annie.png";
+import Daniel from "../assets/images/Daniel.png";
 import NavBar from "../Component/NavBar";
 import Modal from "../Component/Modal";
 import Footer from "../Component/Footer";
@@ -46,6 +50,10 @@ const OurVolunteer = () => {
   const [openLydiaIgnatova, setOpenLydiaIgnatova] = useState(false);
   const [openManukMinasyan, setOpenManukMinasyan] = useState(false);
   const [openCarolynCho, setOpenCarolynCho] = useState(false);
+  const [openJohn, setOpenJohn] = useState(false);
+  const [openDeepa, setOpenDeepa] = useState(false);
+  const [openAnnie, setOpenAnnie] = useState(false);
+  const [openDaniel, setOpenDaniel] = useState(false);
 
   return (
     <>
@@ -339,7 +347,9 @@ const OurVolunteer = () => {
                 />
                 <div className="mt-5 text-center">
                   <p className="font-bold text-[22px]  ">Nida Tazeen</p>
-                  <p className="font-semibold text-[20px] mt-4">Software Developer</p>
+                  <p className="font-semibold text-[20px] mt-4">
+                    Software Developer
+                  </p>
                 </div>
 
                 <p
@@ -513,6 +523,90 @@ const OurVolunteer = () => {
                 <p
                   className="mt-10 font-medium hover:text-[#6036E1] hover:underline cursor-pointer hover:cursor-pointer"
                   onClick={() => setOpenManukMinasyan(true)}
+                >
+                  Learn More
+                  <i className="fa-solid fa-greater-than text-[12px] ml-2"></i>
+                </p>
+              </div>
+              <div className="bg-[#F4F4FE] rounded-[10px] px-8  py-14 ">
+                <img
+                  src={Daniel}
+                  alt="Daniel"
+                  className="text-center mx-auto rounded-full w-[50%]  object-cover"
+                />
+
+                <div className="mt-5 text-center">
+                  <p className="font-bold text-[22px]  ">Daniel</p>
+                  <p className="font-semibold text-[20px] mt-4 ">Instructor</p>
+                </div>
+
+                <p
+                  className="mt-10 font-medium hover:text-[#6036E1] hover:underline cursor-pointer hover:cursor-pointer"
+                  onClick={() => setOpenDaniel(true)}
+                >
+                  Learn More
+                  <i className="fa-solid fa-greater-than text-[12px] ml-2"></i>
+                </p>
+              </div>
+              <div className="bg-[#F4F4FE] rounded-[10px] px-8  py-14 ">
+                <img
+                  src={John}
+                  alt="John"
+                  className="text-center mx-auto rounded-full w-[50%]  object-cover"
+                />
+
+                <div className="mt-5 text-center">
+                  <p className="font-bold text-[22px]  ">Johny Choi</p>
+                  <p className="font-semibold text-[20px] mt-4 ">
+                    Product and UX/UI Designer
+                  </p>
+                </div>
+
+                <p
+                  className="mt-10 font-medium hover:text-[#6036E1] hover:underline cursor-pointer hover:cursor-pointer"
+                  onClick={() => setOpenJohn(true)}
+                >
+                  Learn More
+                  <i className="fa-solid fa-greater-than text-[12px] ml-2"></i>
+                </p>
+              </div>
+              <div className="bg-[#F4F4FE] rounded-[10px] px-8  py-14 ">
+                <img
+                  src={Deepa}
+                  alt="Deepa"
+                  className="text-center mx-auto rounded-full w-[50%]  object-cover"
+                />
+
+                <div className="mt-5 text-center">
+                  <p className="font-bold text-[22px]  ">Deepa Mariam</p>
+                  <p className="font-semibold text-[20px] mt-4 ">
+                    Instructional Designer
+                  </p>
+                </div>
+
+                <p
+                  className="mt-10 font-medium hover:text-[#6036E1] hover:underline cursor-pointer hover:cursor-pointer"
+                  onClick={() => setOpenDeepa(true)}
+                >
+                  Learn More
+                  <i className="fa-solid fa-greater-than text-[12px] ml-2"></i>
+                </p>
+              </div>
+              <div className="bg-[#F4F4FE] rounded-[10px] px-8  py-14 ">
+                <img
+                  src={Annie}
+                  alt="Annie"
+                  className="text-center mx-auto rounded-full w-[50%]  object-cover"
+                />
+
+                <div className="mt-5 text-center">
+                  <p className="font-bold text-[22px]  ">Annie Lee</p>
+                  <p className="font-semibold text-[20px] mt-4 ">Designer</p>
+                </div>
+
+                <p
+                  className="mt-10 font-medium hover:text-[#6036E1] hover:underline cursor-pointer hover:cursor-pointer"
+                  onClick={() => setOpenAnnie(true)}
                 >
                   Learn More
                   <i className="fa-solid fa-greater-than text-[12px] ml-2"></i>
@@ -1213,6 +1307,169 @@ https://www.linkedin.com/in/jacquelinekoerner?utm_source=share&utm_campaign=shar
           support the next generation of designers and help create a learning
           environment where every student feels valued, capable, and inspired to
           pursue their goals.
+        </p>
+      </Modal>
+      <Modal
+        isOpen={openDaniel}
+        onClose={() => setOpenDaniel(false)}
+        title="Daniel G"
+        imageSrc={Daniel}
+        linkedinUrl="https://www.linkedin.com/in/daniel-g-86422a139/"
+      >
+        <p>
+          Daniel is a computer scientist, educator, and lifelong learner who is
+          passionate about helping students understand computer science in a
+          clear, accurate, and approachable way. In a world where technology
+          especially artificial intelligence is often sensationalized or made
+          unnecessarily complicated, Daniel brings a thoughtful, grounded
+          approach to teaching. He believes students should not only learn how
+          technology works, but also develop the confidence and
+          critical-thinking skills to use it responsibly.
+        </p>
+        <br />
+        <p>
+          He holds a Bachelor of Science in Computer Science from Gonzaga
+          University and is currently pursuing a Master of Science in Computer
+          Science at the University of Colorado Boulder. His technical
+          experience spans software engineering, test automation, data
+          engineering, database consulting, and laboratory-based technology
+          testing. He has worked with organizations including Google, Apple,
+          Dolby Laboratories, Revature, and Blockhus and Associates, using
+          technologies such as Python, Java, C++, Haskell, SQL, MATLAB, Azure,
+          and Power Automate.
+        </p>
+        <br />
+        <p>
+          In addition to his professional experience, Daniel has a strong
+          background in mathematics, research, and tutoring. He has conducted
+          research on the asymptotic behavior of the gamma function, developed
+          and presented a mathematical conjecture, and shared his work at
+          academic conferences, including meetings of the American Mathematical
+          Society. As a longtime tutor in mathematics, writing, history, and
+          computer science-related subjects, Daniel brings patience, curiosity,
+          and a genuine commitment to helping Outcome School students build
+          strong foundations and pursue meaningful opportunities in technology.
+        </p>
+      </Modal>
+      <Modal
+        isOpen={openJohn}
+        onClose={() => setOpenJohn(false)}
+        title="Johny Choi"
+        imageSrc={John}
+        linkedinUrl="https://www.linkedin.com/in/johnychoi/"
+      >
+        <p>
+          Johny Choi is a Product and UX/UI Designer with five years of
+          experience creating thoughtful, accessible, and user-centered digital
+          experiences. He holds a Bachelor of Fine Arts in Product Design from
+          Parsons School of Design and a Master of Science in Human-Computer
+          Interaction and Design from the University of California, Irvine,
+          where he graduated with a 3.93 GPA. His work combines creativity,
+          research, technology, and problem-solving to design products that
+          respond to real human needs.
+        </p>
+        <br />
+        <p>
+          Throughout his career, Johny has contributed to projects across
+          healthcare, education, nonprofit organizations, and technology. He
+          currently serves as a Lead UX Designer for the Human Health Project
+          and is the Founder and Lead Designer of RedCTS, a creative design and
+          technology agency. His experience includes leading cross-functional
+          design teams, conducting user research, developing design strategies,
+          creating responsive digital products, and using tools such as Figma,
+          Adobe Creative Suite, Sketch, HTML, CSS, and JavaScript.
+        </p>
+        <br />
+        <p>
+          Johny also brings extensive teaching and mentorship experience to
+          Outcome School. As a former English tutor, he has developed
+          personalized lessons for students of different ages and supported
+          learners with academic writing, college admissions essays, TOEFL, SAT
+          preparation, and professional communication. His previous experience
+          as a Taekwondo instructor further strengthened his commitment to
+          discipline, patience, encouragement, and student growth. Having
+          benefited from mentorship throughout his own journey, Johny is excited
+          to give back by helping Outcome School students explore product
+          design, user experience, technology, and creative problem-solving.
+        </p>
+      </Modal>
+      <Modal
+        isOpen={openDeepa}
+        onClose={() => setOpenDeepa(false)}
+        title="Deepa Mariam"
+        imageSrc={Deepa}
+        linkedinUrl="https://www.linkedin.com/in/deepa-mariam/"
+      >
+        <p>
+          Deepa  is a curriculum and learning professional with more than three
+          years of experience designing engaging, inclusive, and
+          research-informed educational experiences for students and educators.
+          She holds a Master of Education in Human Development and Education
+          from the Harvard Graduate School of Education, where she focused on
+          instructional design, learning science, curriculum development,
+          artificial intelligence in education, and equitable learning
+          practices. Before attending Harvard, Deepa taught students from PreK
+          through eighth grade in India, developing a deep understanding of how
+          thoughtful curriculum design influences whether learners truly
+          understand and retain new concepts.
+        </p>
+        <br />
+        <p>
+          Her’s work combines classroom experience with expertise in backward
+          design, Universal Design for Learning, assessment development,
+          standards alignment, program evaluation, and educational technology.
+          She has created more than 100 lesson plans, assessments, unit plans,
+          and instructional resources across English, mathematics, science, and
+          early literacy. Her portfolio also includes an NGSS-aligned science
+          curriculum, a professional development platform for educators, an
+          interactive branching-scenario learning experience, and an AI-powered
+          instructional coaching tool grounded in the Science of Reading and
+          evidence-based teaching practices.
+        </p>
+        <br />
+        <p>
+          She joined Outcome School because she believes every learner deserves
+          access to education that is practical, effective, and designed for
+          long-term success. She is passionate about using learning science,
+          technology, and AI-powered tools to create accessible educational
+          pathways for underserved youth and communities that may not begin with
+          equal opportunities. As a volunteer instructor and instructional
+          designer, Deepa brings empathy, creativity, research expertise, and a
+          strong commitment to helping Outcome School students build confidence,
+          develop meaningful skills, and prepare for future opportunities in
+          technology.
+        </p>
+      </Modal>
+      <Modal
+        isOpen={openAnnie}
+        onClose={() => setOpenAnnie(false)}
+        title="Annie Lee"
+        imageSrc={Annie}
+        linkedinUrl=""
+      >
+        <p>
+          Annie Lee is a graphic designer who is passionate about creating
+          clear, engaging, and visually compelling work. She believes design has
+          the power to communicate ideas, tell meaningful stories, and help
+          people connect with information in a more memorable way. Her approach
+          combines creativity with purpose, ensuring that every visual is both
+          functional and aesthetically strong. She was drawn to graphic design
+          because she enjoys transforming ideas into visual experiences. Whether
+          developing layouts, branding materials, or digital content, she values
+          the process of finding creative solutions that make information easier
+          to understand and more appealing to audiences. She is committed to
+          continuously strengthening her design skills and exploring new ways to
+          communicate through color, typography, imagery, and composition.
+        </p>
+        <br />
+        <p>
+          She wants to contribute her talents to projects that support students
+          and communities. She is excited to collaborate with a supportive team,
+          learn from other creative professionals, and help bring Outcome
+          School’s mission and programs to life through thoughtful visual
+          design. Through her volunteer work, Annie hopes to grow as a designer
+          while creating materials that inform, inspire, and make a positive
+          impact.
         </p>
       </Modal>
 
