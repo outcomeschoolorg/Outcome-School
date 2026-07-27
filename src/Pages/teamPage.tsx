@@ -9,7 +9,8 @@ import Modupe from "../assets/images/Modupe.png";
 import Addy from "../assets/images/Addy.png";
 import Asya from "../assets/images/Asya.png";
 import Nida from "../assets/images/Nida.png";
-
+import Deepa from "../assets/images/Deepa.png";
+import Annie from "../assets/images/Annie.png";
 import { useState } from "react";
 import NavBar from "../Component/NavBar";
 import Modal from "../Component/Modal";
@@ -27,7 +28,8 @@ const TeamPage = () => {
   const [openModupe, setOpenModupe] = useState(false);
   const [openAddy, setOpenAddy] = useState(false);
   const [openAsya, setOpenAsya] = useState(false);
-
+  const [openDeepa, setOpenDeepa] = useState(false);
+  const [openAnnie, setOpenAnnie] = useState(false);
   return (
     <>
       <NavBar />
@@ -64,7 +66,9 @@ const TeamPage = () => {
               />
               <div className="mt-5 text-center">
                 <p className="font-bold text-[22px]  ">Nida Tazeen</p>
-                <p className="font-semibold text-[20px] mt-4">Software Developer</p>
+                <p className="font-semibold text-[20px] mt-4">
+                  Software Developer
+                </p>
               </div>
 
               <p
@@ -266,6 +270,48 @@ const TeamPage = () => {
               <p
                 className="mt-10 font-medium hover:text-[#6036E1] hover:underline cursor-pointer"
                 onClick={() => setOpenModupe(true)}
+              >
+                Learn More
+                <i className="fa-solid fa-greater-than text-[12px] ml-2"></i>
+              </p>
+            </div>
+            <div className="bg-[#F4F4FE] rounded-[10px] px-8  py-14 ">
+              <img
+                src={Deepa}
+                alt="Deepa"
+                className="text-center mx-auto rounded-full w-[50%]  object-cover"
+              />
+
+              <div className="mt-5 text-center">
+                <p className="font-bold text-[22px]  ">Deepa Mariam</p>
+                <p className="font-semibold text-[20px] mt-4 ">
+                  Instructional Designer
+                </p>
+              </div>
+
+              <p
+                className="mt-10 font-medium hover:text-[#6036E1] hover:underline cursor-pointer hover:cursor-pointer"
+                onClick={() => setOpenDeepa(true)}
+              >
+                Learn More
+                <i className="fa-solid fa-greater-than text-[12px] ml-2"></i>
+              </p>
+            </div>
+            <div className="bg-[#F4F4FE] rounded-[10px] px-8  py-14 ">
+              <img
+                src={Annie}
+                alt="Annie"
+                className="text-center mx-auto rounded-full w-[50%]  object-cover"
+              />
+
+              <div className="mt-5 text-center">
+                <p className="font-bold text-[22px]  ">Annie Lee</p>
+                <p className="font-semibold text-[20px] mt-4 ">Designer</p>
+              </div>
+
+              <p
+                className="mt-10 font-medium hover:text-[#6036E1] hover:underline cursor-pointer hover:cursor-pointer"
+                onClick={() => setOpenAnnie(true)}
               >
                 Learn More
                 <i className="fa-solid fa-greater-than text-[12px] ml-2"></i>
@@ -582,6 +628,85 @@ const TeamPage = () => {
           educators feel the difference too. That's what I'm here to build at
           Outcome School: a quality system that makes that kind of impact
           consistent and scalable.
+        </p>
+      </Modal>
+      <Modal
+        isOpen={openDeepa}
+        onClose={() => setOpenDeepa(false)}
+        title="Deepa Mariam"
+        imageSrc={Deepa}
+        linkedinUrl="https://www.linkedin.com/in/deepa-mariam/"
+      >
+        <p>
+          Deepa  is a curriculum and learning professional with more than three
+          years of experience designing engaging, inclusive, and
+          research-informed educational experiences for students and educators.
+          She holds a Master of Education in Human Development and Education
+          from the Harvard Graduate School of Education, where she focused on
+          instructional design, learning science, curriculum development,
+          artificial intelligence in education, and equitable learning
+          practices. Before attending Harvard, Deepa taught students from PreK
+          through eighth grade in India, developing a deep understanding of how
+          thoughtful curriculum design influences whether learners truly
+          understand and retain new concepts.
+        </p>
+        <br />
+        <p>
+          Her’s work combines classroom experience with expertise in backward
+          design, Universal Design for Learning, assessment development,
+          standards alignment, program evaluation, and educational technology.
+          She has created more than 100 lesson plans, assessments, unit plans,
+          and instructional resources across English, mathematics, science, and
+          early literacy. Her portfolio also includes an NGSS-aligned science
+          curriculum, a professional development platform for educators, an
+          interactive branching-scenario learning experience, and an AI-powered
+          instructional coaching tool grounded in the Science of Reading and
+          evidence-based teaching practices.
+        </p>
+        <br />
+        <p>
+          She joined Outcome School because she believes every learner deserves
+          access to education that is practical, effective, and designed for
+          long-term success. She is passionate about using learning science,
+          technology, and AI-powered tools to create accessible educational
+          pathways for underserved youth and communities that may not begin with
+          equal opportunities. As a volunteer instructor and instructional
+          designer, Deepa brings empathy, creativity, research expertise, and a
+          strong commitment to helping Outcome School students build confidence,
+          develop meaningful skills, and prepare for future opportunities in
+          technology.
+        </p>
+      </Modal>
+      <Modal
+        isOpen={openAnnie}
+        onClose={() => setOpenAnnie(false)}
+        title="Annie Lee"
+        imageSrc={Annie}
+        linkedinUrl=""
+      >
+        <p>
+          Annie Lee is a graphic designer who is passionate about creating
+          clear, engaging, and visually compelling work. She believes design has
+          the power to communicate ideas, tell meaningful stories, and help
+          people connect with information in a more memorable way. Her approach
+          combines creativity with purpose, ensuring that every visual is both
+          functional and aesthetically strong. She was drawn to graphic design
+          because she enjoys transforming ideas into visual experiences. Whether
+          developing layouts, branding materials, or digital content, she values
+          the process of finding creative solutions that make information easier
+          to understand and more appealing to audiences. She is committed to
+          continuously strengthening her design skills and exploring new ways to
+          communicate through color, typography, imagery, and composition.
+        </p>
+        <br />
+        <p>
+          She wants to contribute her talents to projects that support students
+          and communities. She is excited to collaborate with a supportive team,
+          learn from other creative professionals, and help bring Outcome
+          School’s mission and programs to life through thoughtful visual
+          design. Through her volunteer work, Annie hopes to grow as a designer
+          while creating materials that inform, inspire, and make a positive
+          impact.
         </p>
       </Modal>
 

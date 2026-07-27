@@ -24,8 +24,11 @@ import John from "../assets/images/John.jpg";
 import Deepa from "../assets/images/Deepa.png";
 import Annie from "../assets/images/Annie.png";
 import Daniel from "../assets/images/Daniel.png";
+import DannyBruna from "../assets/images/DannyBruna.png";
 import NavBar from "../Component/NavBar";
 import Modal from "../Component/Modal";
+import Shrinithi from "../assets/images/Shrinithi.jpg";
+import PriyanshiDhokiya from "../assets/images/PriyanshiDhokiya.jpg";
 import Footer from "../Component/Footer";
 
 const OurVolunteer = () => {
@@ -54,6 +57,9 @@ const OurVolunteer = () => {
   const [openDeepa, setOpenDeepa] = useState(false);
   const [openAnnie, setOpenAnnie] = useState(false);
   const [openDaniel, setOpenDaniel] = useState(false);
+  const [openShrinithi, setOpenShrinithi] = useState(false);
+  const [openPriyanshiDhokiya, setOpenPriyanshiDhokiya] = useState(false);
+  const [openDannyBruna, setOpenDannyBruna] = useState(false);
 
   return (
     <>
@@ -81,7 +87,7 @@ const OurVolunteer = () => {
 
                 <div className="mt-5 text-center">
                   <p className="font-bold text-[22px]  ">Aarushi</p>
-                  <p className="font-semibold text-[20px] mt-4">Instructor</p>
+                  <p className="font-semibold text-[20px] mt-4">Mentor</p>
                 </div>
 
                 <p
@@ -557,9 +563,7 @@ const OurVolunteer = () => {
 
                 <div className="mt-5 text-center">
                   <p className="font-bold text-[22px]  ">Johny Choi</p>
-                  <p className="font-semibold text-[20px] mt-4 ">
-                    Product and UX/UI Designer
-                  </p>
+                  <p className="font-semibold text-[20px] mt-4 ">Mentor</p>
                 </div>
 
                 <p
@@ -607,6 +611,65 @@ const OurVolunteer = () => {
                 <p
                   className="mt-10 font-medium hover:text-[#6036E1] hover:underline cursor-pointer hover:cursor-pointer"
                   onClick={() => setOpenAnnie(true)}
+                >
+                  Learn More
+                  <i className="fa-solid fa-greater-than text-[12px] ml-2"></i>
+                </p>
+              </div>
+              <div className="bg-[#F4F4FE] rounded-[10px] px-8  py-14 ">
+                <img
+                  src={Shrinithi}
+                  alt="Shrinithi Sathiyaseelan"
+                  className="text-center mx-auto rounded-full w-[50%]  object-cover"
+                />
+                <div className="mt-5 text-center">
+                  <p className="font-bold text-[22px]  ">
+                    Shrinithi Sathiyaseelan
+                  </p>
+                  <p className="font-semibold text-[20px] mt-4">Instructor</p>
+                </div>
+
+                <p
+                  className="mt-10 font-medium hover:text-[#6036E1] hover:underline cursor-pointer hover:cursor-pointer"
+                  onClick={() => setOpenShrinithi(true)}
+                >
+                  Learn More
+                  <i className="fa-solid fa-greater-than text-[12px] ml-2"></i>
+                </p>
+              </div>
+              <div className="bg-[#F4F4FE] rounded-[10px] px-8  py-14 ">
+                <img
+                  src={PriyanshiDhokiya}
+                  alt="Priyanshi Dhokiya"
+                  className="text-center mx-auto rounded-full w-[50%]  object-cover"
+                />
+                <div className="mt-5 text-center">
+                  <p className="font-bold text-[22px]  ">Priyanshi Dhokiya</p>
+                  <p className="font-semibold text-[20px] mt-4">Instructor</p>
+                </div>
+
+                <p
+                  className="mt-10 font-medium hover:text-[#6036E1] hover:underline cursor-pointer hover:cursor-pointer"
+                  onClick={() => setOpenPriyanshiDhokiya(true)}
+                >
+                  Learn More
+                  <i className="fa-solid fa-greater-than text-[12px] ml-2"></i>
+                </p>
+              </div>
+              <div className="bg-[#F4F4FE] rounded-[10px] px-8  py-14 ">
+                <img
+                  src={DannyBruna}
+                  alt="Danny Bruna"
+                  className="text-center mx-auto rounded-full w-[50%]  object-cover"
+                />
+                <div className="mt-5 text-center">
+                  <p className="font-bold text-[22px]  ">Danny Bruna</p>
+                  <p className="font-semibold text-[20px] mt-4">Instructor</p>
+                </div>
+
+                <p
+                  className="mt-10 font-medium hover:text-[#6036E1] hover:underline cursor-pointer hover:cursor-pointer"
+                  onClick={() => setOpenDannyBruna(true)}
                 >
                   Learn More
                   <i className="fa-solid fa-greater-than text-[12px] ml-2"></i>
@@ -1472,7 +1535,109 @@ https://www.linkedin.com/in/jacquelinekoerner?utm_source=share&utm_campaign=shar
           impact.
         </p>
       </Modal>
-
+      <Modal
+        isOpen={openDannyBruna}
+        onClose={() => setOpenDannyBruna(false)}
+        title="Danny Bruna"
+        imageSrc={DannyBruna}
+        linkedinUrl="https://www.linkedin.com/in/dr-danny-bruna/"
+      >
+        <p>
+          Danny is a Cybersecurity Engineering Instructor with a Doctor of
+          Information Technology specializing in Cybersecurity. His academic and
+          professional interests include cybersecurity, digital forensics,
+          vulnerability management, and emerging technologies. He is passionate
+          about protecting people, organizations, and critical infrastructure
+          through education, security best practices, and continuous learning.
+          Danny believes cybersecurity is more than a technical field—it is a
+          responsibility to protect the systems and services modern society
+          depends on.
+        </p>
+        <br />
+        <p>
+          He became an instructor because he enjoys helping students understand
+          complex topics and develop practical skills for real-world careers.
+          Danny connects cybersecurity theory with hands-on activities, case
+          studies, and industry best practices to make learning more accessible
+          and relevant. His goal is to help students become confident, ethical
+          problem-solvers who understand how to design secure systems, reduce
+          vulnerabilities, and respond to evolving threats. Danny joined Outcome
+          School because its focus on mentorship, hands-on learning, and career
+          preparation closely aligns with his values. He is excited to
+          contribute his knowledge, industry perspective, and enthusiasm while
+          supporting students as they build strong technical foundations.
+          Through his role, Danny hopes to help prepare the next generation of
+          cybersecurity professionals to protect sensitive information,
+          strengthen digital infrastructure, and become lifelong learners.
+        </p>
+      </Modal>
+      <Modal
+        isOpen={openPriyanshiDhokiya}
+        onClose={() => setOpenPriyanshiDhokiya(false)}
+        title="Priyanshi Dhokiya"
+        imageSrc={PriyanshiDhokiya}
+        linkedinUrl="https://www.linkedin.com/in/priyanshi-dhokiya/"
+      >
+        <p>
+          Priyanshi is a Cybersecurity Engineering Instructor at Outcome School
+          and holds a Master of Science in Cybersecurity from Saint Louis
+          University. She is also an AWS Certified Security – Specialty
+          professional. Her interest in cybersecurity comes from its powerful
+          combination of purpose and challenge: protecting people, systems, and
+          information while responding to threats that are constantly evolving.
+          She became an instructor because she remembers how intimidating
+          cybersecurity appeared when she first entered the field. Priyanshi
+          wanted to become the kind of supportive guide she wished she had at
+          the beginning of her own journey. Through practical instruction,
+          encouragement, and real-world insight, she helps students build their
+          technical skills, confidence, and ability to approach complex security
+          problems.
+        </p>
+        <br />
+        <p>
+          Priyanshi joined Outcome School because its mission aligns with her
+          commitment to helping beginners become job-ready professionals. She
+          finds it especially rewarding to watch students progress from their
+          first day of learning to confidently presenting their work on Demo
+          Day. Through her role, she hopes to make cybersecurity more accessible
+          and prepare more learners to build meaningful careers protecting the
+          digital world.
+        </p>
+      </Modal>
+      <Modal
+        isOpen={openShrinithi}
+        onClose={() => setOpenShrinithi(false)}
+        title="Shrinithi Sathiyaseelan"
+        imageSrc={Shrinithi}
+        linkedinUrl="https://www.linkedin.com/in/shrinithis/"
+      >
+        <p>
+          Creativity and technology have always been important parts of
+          Shrinithi’s academic journey. She is a rising senior at the University
+          of California, Santa Cruz, where she studies Cognitive Science and
+          Technology and Information Management. She is passionate about product
+          design because it allows her to combine creativity, human-centered
+          thinking, and technology to solve meaningful problems for real people.
+          Shrinithi became a Product Design instructor because she wanted to
+          help others discover the possibilities within the field. She believes
+          product design is about much more than creating visually appealing
+          products—it teaches people to understand different perspectives,
+          identify user needs, solve problems creatively, and collaborate with
+          others to transform ideas into practical solutions. As an instructor,
+          she enjoys supporting students as they develop their confidence,
+          strengthen their design skills, and bring their ideas to life.
+        </p>
+        <br />
+        <p>
+          She joined Outcome School because its mission is centered on opening
+          doors and expanding access to opportunity. Shrinithi is excited to
+          contribute to a program that emphasizes practical skill-building and
+          helps learners prepare for careers in technology. Through her work,
+          she hopes to inspire more people from different backgrounds to explore
+          product design and recognize that they have the creativity and
+          potential to build products that make a difference.
+        </p>
+      </Modal>
       <Footer />
     </>
   );
