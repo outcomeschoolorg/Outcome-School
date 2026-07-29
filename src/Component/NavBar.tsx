@@ -124,6 +124,12 @@ const NavBar: React.FC = () => {
                 >
                   Workshops
                 </Link>
+                <Link
+                  to="/OutcomeSchool"
+                  className="block px-4 py-2 bg-white hover:bg-gray-200 "
+                >
+                  The Outcome School
+                </Link>
               </div>
             )}
           </div>
@@ -345,6 +351,12 @@ const NavBar: React.FC = () => {
                 className="block px-4 py-2 bg-white hover:bg-gray-200 "
               >
                 Workshops
+              </Link>
+              <Link
+                to="/OutcomeSchool"
+                className="block px-4 py-2 bg-white hover:bg-gray-200 "
+              >
+                The Outcome School
               </Link>
             </div>
           )}
