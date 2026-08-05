@@ -68,6 +68,7 @@ import OurPartners from "./Pages/OurPartners";
 import Workshops from "./Pages/Workshops";
 import StrategicAdvisoryCouncil from "./Pages/StrategicAdvisoryCouncil";
 import OutcomeSchool from "./Pages/OutcomeSchool";
+import CertificateList from "./Pages/Certificates";
 const App = () => {
   return (
     <>
@@ -198,6 +199,7 @@ const App = () => {
             element={<StrategicAdvisoryCouncil />}
           />
           <Route path="/OutcomeSchool" element={<OutcomeSchool />} />
+          <Route path="/Certificates" element={<CertificateList />}></Route>
         </Routes>
       </Router>
 
