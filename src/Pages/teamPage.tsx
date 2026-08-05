@@ -11,6 +11,7 @@ import Asya from "../assets/images/Asya.png";
 import Nida from "../assets/images/Nida.png";
 import Deepa from "../assets/images/Deepa.png";
 import Annie from "../assets/images/Annie.png";
+import HannahHolm from "../assets/images/HannahHolm.png";
 import { useState } from "react";
 import NavBar from "../Component/NavBar";
 import Modal from "../Component/Modal";
@@ -30,6 +31,7 @@ const TeamPage = () => {
   const [openAsya, setOpenAsya] = useState(false);
   const [openDeepa, setOpenDeepa] = useState(false);
   const [openAnnie, setOpenAnnie] = useState(false);
+  const [openHannahHolm, setOpenHannahHolm] = useState(false);
   return (
     <>
       <NavBar />
@@ -312,6 +314,27 @@ const TeamPage = () => {
               <p
                 className="mt-10 font-medium hover:text-[#6036E1] hover:underline cursor-pointer hover:cursor-pointer"
                 onClick={() => setOpenAnnie(true)}
+              >
+                Learn More
+                <i className="fa-solid fa-greater-than text-[12px] ml-2"></i>
+              </p>
+            </div>
+            <div className="bg-[#F4F4FE] rounded-[10px] px-8  py-14 ">
+              <img
+                src={HannahHolm}
+                alt="Hannah Holm"
+                className="text-center mx-auto rounded-full w-[50%]  object-cover"
+              />
+              <div className="mt-5 text-center">
+                <p className="font-bold text-[22px]  ">Hannah Holm</p>
+                <p className="font-semibold text-[20px] mt-4">
+                  Instructional Designer
+                </p>
+              </div>
+
+              <p
+                className="mt-10 font-medium hover:text-[#6036E1] hover:underline cursor-pointer hover:cursor-pointer"
+                onClick={() => setOpenHannahHolm(true)}
               >
                 Learn More
                 <i className="fa-solid fa-greater-than text-[12px] ml-2"></i>
@@ -707,6 +730,37 @@ const TeamPage = () => {
           design. Through her volunteer work, Annie hopes to grow as a designer
           while creating materials that inform, inspire, and make a positive
           impact.
+        </p>
+      </Modal>
+
+      <Modal
+        isOpen={openHannahHolm}
+        onClose={() => setOpenHannahHolm(false)}
+        title="Hannah Holm"
+        imageSrc={HannahHolm}
+        linkedinUrl="http://www.linkedin.com/in/hannahmholm"
+      >
+        <p>
+          Hannah is an experienced educator and instructional designer committed
+          to creating high-quality learning systems that support both students
+          and teachers. After five years as a high school teacher, she
+          transitioned into instructional design to address broader challenges
+          affecting students, including overcrowded classrooms, diverse learning
+          needs, and limited educator capacity.{" "}
+        </p>
+        <br />
+        <p>
+          Most recently, Hannah served as Senior Manager of New Teacher
+          Development and Experience at DSST, where she designed training,
+          mentorship, and professional development systems to strengthen teacher
+          effectiveness and improve the student learning experience. As a member
+          of Outcome School’s Instructional Design team, Hannah develops
+          engaging, accessible, and career-focused educational experiences that
+          help learners build practical skills and pursue meaningful
+          opportunities in technology. Outside of work, she enjoys swimming,
+          hiking, arts and crafts, reading, and watching films. She is also
+          writing a science-fiction novel and enjoys connecting with
+          professionals across the learning and development field.
         </p>
       </Modal>
 
