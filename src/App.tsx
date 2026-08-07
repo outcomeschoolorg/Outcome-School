@@ -199,7 +199,7 @@ const App = () => {
             element={<StrategicAdvisoryCouncil />}
           />
           <Route path="/OutcomeSchool" element={<OutcomeSchool />} />
-          <Route path="/Certificates" element={<CertificateList />}></Route>
+          <Route path="/certifications" element={<CertificateList />}></Route>
         </Routes>
       </Router>
 
