@@ -12,6 +12,8 @@ import Nida from "../assets/images/Nida.png";
 import Deepa from "../assets/images/Deepa.png";
 import Annie from "../assets/images/Annie.png";
 import HannahHolm from "../assets/images/HannahHolm.png";
+import MelissaFang from "../assets/images/MelissaFang.jpg";
+import JennyCluggish from "../assets/images/JennyCluggish.png";
 import { useState } from "react";
 import NavBar from "../Component/NavBar";
 import Modal from "../Component/Modal";
@@ -32,6 +34,8 @@ const TeamPage = () => {
   const [openDeepa, setOpenDeepa] = useState(false);
   const [openAnnie, setOpenAnnie] = useState(false);
   const [openHannahHolm, setOpenHannahHolm] = useState(false);
+  const [openJennyCluggish, setOpenJennyCluggish] = useState(false);
+  const [openMelissaFang, setOpenMelissaFang] = useState(false);
   return (
     <>
       <NavBar />
@@ -340,11 +344,122 @@ const TeamPage = () => {
                 <i className="fa-solid fa-greater-than text-[12px] ml-2"></i>
               </p>
             </div>
+            <div className="bg-[#F4F4FE] rounded-[10px] px-8  py-14 ">
+              <img
+                src={JennyCluggish}
+                alt="Jenny Cluggish"
+                className="text-center mx-auto rounded-full w-[50%]  object-cover"
+              />
+
+              <div className="mt-5 text-center">
+                <p className="font-bold text-[22px]  ">Jenny Cluggish</p>
+                <p className="font-semibold text-[20px] mt-4 ">
+                  Instructional Designer
+                </p>
+              </div>
+
+              <p
+                className="mt-10 font-medium hover:text-[#6036E1] hover:underline cursor-pointer hover:cursor-pointer"
+                onClick={() => setOpenJennyCluggish(true)}
+              >
+                Learn More
+                <i className="fa-solid fa-greater-than text-[12px] ml-2"></i>
+              </p>
+            </div>
+            <div className="bg-[#F4F4FE] rounded-[10px] px-8  py-14 ">
+              <img
+                src={MelissaFang}
+                alt="Melissa Fang"
+                className="text-center mx-auto rounded-full w-[50%]  object-cover"
+              />
+
+              <div className="mt-5 text-center">
+                <p className="font-bold text-[22px]  ">Melissa Fang</p>
+                <p className="font-semibold text-[20px] mt-4 ">
+                  Instructional Designer
+                </p>
+              </div>
+
+              <p
+                className="mt-10 font-medium hover:text-[#6036E1] hover:underline cursor-pointer hover:cursor-pointer"
+                onClick={() => setOpenMelissaFang(true)}
+              >
+                Learn More
+                <i className="fa-solid fa-greater-than text-[12px] ml-2"></i>
+              </p>
+            </div>
           </div>
         </div>
       </div>
 
       {/* Reusable Modal Usage */}
+      <Modal
+        isOpen={openMelissaFang}
+        onClose={() => setOpenMelissaFang(false)}
+        title="Melissa Fang"
+        imageSrc={MelissaFang}
+        linkedinUrl="https://www.linkedin.com/in/melissa-fang/"
+      >
+        <p>
+          She brings a decade of experience in learning program management,
+          instructional design, and content development across multiple
+          industries. Throughout her career, she has demonstrated a strong
+          ability to translate complex information into clear, intuitive, and
+          engaging learning experiences.
+        </p>
+        <br />
+        <p>
+          She believes learning should take place in a safe and supportive
+          environment where learners feel comfortable asking questions,
+          practicing new skills, making mistakes, and continuously improving.
+          Her goal is to design learning experiences that build confidence and
+          empower individuals to reach their full potential.
+        </p>
+        <br />
+        <p>
+          As a first-generation U.S.-born citizen whose grandparents achieved
+          the American Dream, she recognizes that the same opportunities are no
+          longer accessible to far too many people. She joined Outcome School
+          because she is inspired by its mission to expand access to technology
+          education in underserved communities. Through her instructional design
+          expertise, she is excited to help transform educational access into
+          practical skills, meaningful opportunities, and measurable outcomes
+          for program participants.
+        </p>
+      </Modal>
+      <Modal
+        isOpen={openJennyCluggish}
+        onClose={() => setOpenJennyCluggish(false)}
+        title="Jenny Cluggish"
+        imageSrc={JennyCluggish}
+        linkedinUrl="https://www.linkedin.com/in/jennycluggishid/"
+      >
+        <p>
+          Her journey into instructional design began through a career in
+          education, where she spent several years designing curricula, leading
+          programs, and helping learners develop new skills. As an educator and
+          program leader, she witnessed firsthand how thoughtfully designed
+          learning experiences can build confidence, spark curiosity, and
+          empower people to accomplish things they once believed were
+          impossible. What she enjoys most about instructional design is the
+          opportunity to transform complex ideas into clear, meaningful, and
+          practical learning experiences. She believes learning should be
+          purposeful and engaging, providing people with the knowledge, skills,
+          and confidence to apply what they have learned in real-world
+          situations. Whether she is designing eLearning courses, instructor-led
+          training, or performance-support resources, she enjoys collaborating
+          with others to create learning experiences that make a lasting impact.
+        </p>
+        <br />
+        <p>
+          She joined Outcome School because she believes education has the power
+          to transform lives. She is inspired by Outcome School’s mission to
+          expand access to technology education and create meaningful
+          opportunities for learners. She is proud to be part of a team that
+          equips students with practical skills, encourages curiosity, and helps
+          them build the confidence needed to prepare for successful futures.
+        </p>
+      </Modal>
       <Modal
         isOpen={openSamson}
         onClose={() => setOpenSamson(false)}
