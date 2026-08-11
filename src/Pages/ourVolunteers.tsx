@@ -27,6 +27,7 @@ import NavBar from "../Component/NavBar";
 import Modal from "../Component/Modal";
 import Shrinithi from "../assets/images/Shrinithi.jpg";
 import PriyanshiDhokiya from "../assets/images/PriyanshiDhokiya.jpg";
+import LuisSanchez from "../assets/images/LuisSanchez.png";
 import Footer from "../Component/Footer";
 
 const OurVolunteer = () => {
@@ -56,6 +57,7 @@ const OurVolunteer = () => {
   const [openShrinithi, setOpenShrinithi] = useState(false);
   const [openPriyanshiDhokiya, setOpenPriyanshiDhokiya] = useState(false);
   const [openDannyBruna, setOpenDannyBruna] = useState(false);
+  const [openLuisSanchez, setOpenLuisSanchez] = useState(false);
 
   return (
     <>
@@ -623,10 +625,75 @@ const OurVolunteer = () => {
                   <i className="fa-solid fa-greater-than text-[12px] ml-2"></i>
                 </p>
               </div>
+
+              <div className="bg-[#F4F4FE] rounded-[10px] px-8  py-14 ">
+                <img
+                  src={LuisSanchez}
+                  alt="Luis Sanchez"
+                  className="text-center mx-auto rounded-full w-[50%]  object-cover"
+                />
+                <div className="mt-5 text-center">
+                  <p className="font-bold text-[22px]  ">Luis Sanchez</p>
+                  <p className="font-semibold text-[20px] mt-4">Instructor</p>
+                </div>
+
+                <p
+                  className="mt-10 font-medium hover:text-[#6036E1] hover:underline cursor-pointer hover:cursor-pointer"
+                  onClick={() => setOpenLuisSanchez(true)}
+                >
+                  Learn More
+                  <i className="fa-solid fa-greater-than text-[12px] ml-2"></i>
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
+
+      <Modal
+        isOpen={openLuisSanchez}
+        onClose={() => setOpenLuisSanchez(false)}
+        title=""
+        imageSrc={LuisSanchez}
+        linkedinUrl="https://www.linkedin.com/in/luis-sanchez-763533a6/"
+      >
+        <p>
+          Luis Sanchez is a Senior Cyber Security Consultant with a strong
+          background in hands-on, practical security work. He holds several
+          respected industry certifications, including Certified Ethical Hacker
+          (CEH), CompTIA PenTest+, and SecurityX (CASP+). He also recently
+          completed a SANS work-study program and is currently preparing for the
+          CISSP certification.
+        </p>
+        <br />
+        <p>
+          Luis is passionate about cybersecurity because of its critical role in
+          protecting data, privacy, and the operational integrity of individuals
+          and organizations. Through his professional work, he remains closely
+          engaged with evolving cyber threats and the practical challenges
+          organizations face in defending their digital infrastructure.
+        </p>
+        <br />
+        <p>
+          As an instructor, Luis is committed to helping close the cybersecurity
+          skills gap by sharing real-world knowledge and practical experience
+          with aspiring professionals. His own career was accelerated through
+          hands-on training and industry certifications, giving him a strong
+          understanding of what it takes to successfully transition into the
+          field. He enjoys guiding students from foundational IT concepts
+          through more advanced areas such as ethical hacking and penetration
+          testing.
+        </p>
+        <br />
+        <p>
+          Luis joined Outcome School because of its mission to make high-quality
+          technology education more accessible. He sees teaching as an
+          opportunity to give back, support the community, and empower students
+          who are working toward meaningful careers in cybersecurity. Outside of
+          technology, Luis enjoys working out, playing soccer, and studying
+          guitar music theory
+        </p>
+      </Modal>
 
       <Modal
         isOpen={openAarushi}
