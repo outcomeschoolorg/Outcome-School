@@ -7,6 +7,7 @@ import EDD from "../assets/images/our-partners/EDD.png";
 import ECLA from "../assets/images/our-partners/EC.png";
 import YMCA from "../assets/images/our-partners/ymca.png";
 import canes from "../assets/images/our-partners/canes.png";
+import gitbook from "../assets/images/our-partners/gitbook.png";
 
 const partnersData = [
   {
@@ -22,7 +23,10 @@ const partnersData = [
   },
   {
     title: "In-Kind Support Partners",
-    images: [{ src: support, className: "h-25 sm:h-32 md:h-40" }],
+    images: [
+      { src: support, className: "h-25 sm:h-32 md:h-40" },
+      { src: gitbook, className: "h-20 sm:h-30 md:h-30" },
+    ],
   },
   {
     title: "Donors",
