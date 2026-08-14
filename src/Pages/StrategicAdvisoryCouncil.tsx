@@ -3,7 +3,7 @@ import Footer from "../Component/Footer";
 import Modal from "../Component/Modal";
 import { useState } from "react";
 import Olivia from "../assets/images/Olivia.jpeg";
-import BrianCozzolino from "../assets/images/briancozzolino.jpeg";
+import BrianCozzolino from "../assets/images/BrianCozzolino.jpg";
 
 type Concil = {
   name: string;
@@ -27,7 +27,7 @@ const ConcilsData: Concil[] = [
     img: BrianCozzolino,
     title: "Strategic Advisor",
     description:
-      "is a commercial strategy and ecosystem development leader with more than a decade of experience connecting transformative technologies with commercial opportunities. His background includes global go-to-market strategy, strategic alliances, market expansion, executive advisory, and high-performance leadership. Brian has worked across the United States, Europe, the Middle East, Latin America, and Southeast Asia, aligning Fortune 500 companies, government agencies, academic institutions, and cross-functional teams to build scalable partnerships and revenue-generating initiatives. Throughout his career, Brian has led complex commercial ecosystems and international expansion strategies. At Gulf Intelligence, he helped direct strategy for a $10 million-plus research and development entity, coordinated a consortium of more than 50 major companies and government organizations, and supported the development of Microsoft Energy Core—an ecosystem engaging more than 2,500 senior leaders. His experience also includes creating market-entry strategies for global financial institutions, developing national economic and employability frameworks, and producing intelligence-driven strategies that generated measurable growth and millions of dollars in new business opportunities. Brian joined Outcome School’s Strategic Advisory Council to help strengthen the connection between workforce development and enterprise employment. He believes technical education creates the foundation, but strong commercial alignment is essential for translating skills into economic mobility. By leveraging his corporate network and expertise in ecosystem orchestration, Brian aims to build strategic partnerships with technology employers, develop high-impact hiring pathways, and connect Outcome School students and graduates with meaningful career opportunities throughout Greater Los Angeles and beyond.",
+      "is a commercial strategy leader with 15 years of experience building and scaling ecosystems across emerging and developed markets. He has led high-stakes market entries, cross-border partnerships, and multi-stakeholder initiatives spanning the Middle East, Southeast Asia, Latin America, and Europe. At Gulf Intelligence, he has directed large-scale R&D consortia involving Fortune 500 firms, built commercial platforms connecting industry and technology stakeholders, and driven market expansion efforts that strengthened regional positioning and revenue growth. His focus is aligning corporate, government, and institutional partners to move complex initiatives from strategy into execution. A former All-American lacrosse captain at SMU and MIT Sloan-certified in AI strategy, Brian brings a practical operator’s lens to talent-to-employment pathways, employer partnerships, and the commercial systems that turn capability into outcomes. He currently serves on the Strategic Advisory Council at Outcome School.",
     linkedinUrl: "https://www.linkedin.com/in/briancozzolino/",
   },
 ];
