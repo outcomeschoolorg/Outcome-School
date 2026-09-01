@@ -7,6 +7,7 @@ import EDD from "../assets/images/our-partners/EDD.png";
 import ECLA from "../assets/images/our-partners/EC.png";
 import YMCA from "../assets/images/our-partners/ymca.png";
 import canes from "../assets/images/our-partners/canes.png";
+import emperiric from "../assets/images/our-partners/emperiric.jpg";
 import gitbook from "../assets/images/our-partners/gitbook.png";
 
 const partnersData = [
@@ -30,7 +31,10 @@ const partnersData = [
   },
   {
     title: "Donors",
-    images: [{ src: canes, className: "h-28 sm:h-32 md:h-40" }],
+    images: [
+      { src: canes, className: "h-28 sm:h-32 md:h-40" },
+      { src: emperiric, className: "h-28 sm:h-32 md:h-40" },
+    ],
   },
   {
     title: "Other Partners",
