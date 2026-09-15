@@ -4,6 +4,8 @@ import Modal from "../Component/Modal";
 import { useState } from "react";
 import Olivia from "../assets/images/Olivia.jpeg";
 import BrianCozzolino from "../assets/images/BrianCozzolino.jpg";
+import Luis from "../assets/images/LuisSanchez-AcOw_CcS.png";
+import Ethan from "../assets/images/Ethan-R5vOVcf5.png";
 
 type Concil = {
   name: string;
@@ -29,6 +31,22 @@ const ConcilsData: Concil[] = [
     description:
       "is a commercial strategy leader with 15 years of experience building and scaling ecosystems across emerging and developed markets. He has led high-stakes market entries, cross-border partnerships, and multi-stakeholder initiatives spanning the Middle East, Southeast Asia, Latin America, and Europe. At Gulf Intelligence, he has directed large-scale R&D consortia involving Fortune 500 firms, built commercial platforms connecting industry and technology stakeholders, and driven market expansion efforts that strengthened regional positioning and revenue growth. His focus is aligning corporate, government, and institutional partners to move complex initiatives from strategy into execution. A former All-American lacrosse captain at SMU and MIT Sloan-certified in AI strategy, Brian brings a practical operator’s lens to talent-to-employment pathways, employer partnerships, and the commercial systems that turn capability into outcomes. He currently serves on the Strategic Advisory Council at Outcome School.",
     linkedinUrl: "https://www.linkedin.com/in/briancozzolino/",
+  },
+  {
+    name: "Luis Sanchez",
+    img: Luis,
+    title: "Strategic Advisor",
+    description:
+      "is a Senior Security Architect and works at Palo Alto Networks. He holds several respected industry certifications, including Certified Ethical Hacker (CEH), CompTIA PenTest+, and SecurityX (CASP+). He also recently completed a SANS work-study program and is currently preparing for the CISSP certification. Luis is passionate about cybersecurity because of its critical role in protecting data, privacy, and the operational integrity of individuals and organizations. Through his professional work, he remains closely engaged with evolving cyber threats and the practical challenges organizations face in defending their digital infrastructure. He helps youth to close the cybersecurity skills gap by sharing real-world knowledge and practical experience with aspiring professionals. His own career was accelerated through hands-on training and industry certifications, giving him a strong understanding of what it takes to successfully transition into the field. He enjoys guiding students from foundational IT concepts through more advanced areas such as ethical hacking and penetration testing. Luis joined Outcome School because of its mission to make high-quality technology education more accessible. He sees teaching as an opportunity to give back, support the community, and empower students who are working toward meaningful careers in cybersecurity. Outside of technology, Luis enjoys working out, playing soccer, and studying guitar music theory",
+    linkedinUrl: "https://www.linkedin.com/in/luis-sanchez-763533a6/",
+  },
+  {
+    name: "Ethan Caraway",
+    img: Ethan,
+    title: "Strategic Advisor",
+    description:
+      "is a founder of Flight Paper Studio and a game developer with over 11 years of experience in everything from AAA games to indie games to serious games outside of the industry. Whether I'm working on the Call of Duty franchise, educational apps, or biomedical research tools, I always bring my game development expertise to create accessible, intuitive products. Growing up, I loved playing games like GoldenEye 007, The Legend of Zelda: Ocarina of Time, and Heroes of Might & Magic III. When I played Hideo Kojima's masterpiece Metal Gear Solid 3, it opened my eyes to the unique storytelling and design potential of games as an artistic medium. With my degree in Computer Science from Louisiana State University, I have sought to explore that potential ever since. Being from a small town in Louisiana, I'm partnering with Outcome School to provide the opportunities that I didn't have access to. With over 5 years of teaching experience, I strive to help mentor the next generation of aspiring game developers",
+    linkedinUrl: "https://www.linkedin.com/in/ethan-caraway/",
   },
 ];
 
