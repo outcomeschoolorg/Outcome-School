@@ -15,7 +15,6 @@ import Ethan from "../assets/images/Ethan.png";
 import Mohamed from "../assets/images/Mohamed.png";
 import freshman from "../assets/images/freshman.png";
 import Manya from "../assets/images/Manya.jpeg";
-import BhuvaniRangesh from "../assets/images/BhuvaniRangesh.png";
 import ManukMinasyan from "../assets/images/ManukMinasyan.jpg";
 import TammyCalderaro from "../assets/images/TammyCalderaro.jpg";
 import LydiaIgnatova from "../assets/images/LydiaIgnatova.png";
@@ -47,7 +46,6 @@ const OurVolunteer = () => {
   const [openMohamed, setOpenMohamed] = useState(false);
   const [openfreshman, setOpenfreshman] = useState(false);
   const [openManya, setOpenManya] = useState(false);
-  const [openBhuvaniRangesh, setOpenBhuvaniRangesh] = useState(false);
   const [openTammyCalderaro, setOpenTammyCalderaro] = useState(false);
   const [openLydiaIgnatova, setOpenLydiaIgnatova] = useState(false);
   const [openManukMinasyan, setOpenManukMinasyan] = useState(false);
@@ -468,26 +466,6 @@ const OurVolunteer = () => {
               </div>
               <div className="bg-[#F4F4FE] rounded-[10px] px-8  py-14 ">
                 <img
-                  src={BhuvaniRangesh}
-                  alt="BhuvaniRangesh"
-                  className="text-center mx-auto rounded-full w-[50%]  object-cover"
-                />
-
-                <div className="mt-5 text-center">
-                  <p className="font-bold text-[22px]  ">Bhuvani Rangesh</p>
-                  <p className="font-semibold text-[20px] mt-4 ">Instructor</p>
-                </div>
-
-                <p
-                  className="mt-10 font-medium hover:text-[#6036E1] hover:underline cursor-pointer hover:cursor-pointer"
-                  onClick={() => setOpenBhuvaniRangesh(true)}
-                >
-                  Learn More
-                  <i className="fa-solid fa-greater-than text-[12px] ml-2"></i>
-                </p>
-              </div>
-              <div className="bg-[#F4F4FE] rounded-[10px] px-8  py-14 ">
-                <img
                   src={TammyCalderaro}
                   alt="TammyCalderaro"
                   className="text-center mx-auto rounded-full w-40 h-40 object-cover"
@@ -535,7 +513,7 @@ const OurVolunteer = () => {
 
                 <div className="mt-5 text-center">
                   <p className="font-bold text-[22px]  ">Daniel</p>
-                  <p className="font-semibold text-[20px] mt-4 ">Instructor</p>
+                  <p className="font-semibold text-[20px] mt-4 ">Mentor</p>
                 </div>
 
                 <p
@@ -1199,38 +1177,6 @@ https://www.linkedin.com/in/jacquelinekoerner?utm_source=share&utm_campaign=shar
           instruction from engineers who are actively working in the field not
           teaching from textbooks. I want to be that bridge between real-world
           engineering and the classroom.
-        </p>
-      </Modal>
-      <Modal
-        isOpen={openBhuvaniRangesh}
-        onClose={() => setOpenBhuvaniRangesh(false)}
-        title="Bhuvani Rangesh"
-        imageSrc={BhuvaniRangesh}
-        linkedinUrl="https://www.linkedin.com/in/bhuvanirangesh/"
-      >
-        <p>
-          I don’t believe opportunities are simply handed out—I believe in
-          creating them. That belief is what pushed me to join Outcome School,
-          where I have the privilege of serving as both a Security Analyst and
-          an Instructor.
-        </p>
-        <br />
-        <p>
-          In my view, success in cybersecurity comes down to how you think and
-          identify threats, and you can only master that if you enjoy the
-          challenge. I am excited to bring my real-world experience from the
-          operations side into the classroom. I understand that stepping into
-          this industry can be scary, and I hope to help my students tackle
-          those hurdles by making the learning process engaging, logical,
-          and—most importantly—fun.
-        </p>
-        <br />
-        <p>
-          My journey into cybersecurity actually started with a childhood love
-          for puzzles. That investigative spark is what drove me to become a
-          Security Analyst, and it’s what I now bring to my role as an
-          Instructor at Outcome School.” Bhuvani Rangesh | LinkedIn Would you
-          please add this to the meet the volunteers
         </p>
       </Modal>
       <Modal
