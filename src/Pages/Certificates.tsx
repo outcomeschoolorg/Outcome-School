@@ -233,8 +233,12 @@ const styles = {
 };
 
 function formatDate(dateStr: string) {
-  const d = new Date(dateStr);
-  if (isNaN(d.getTime())) return dateStr;
+  if (!dateStr) return "";
+
+  const [year, month, day] = dateStr.split("-").map(Number);
+
+  const d = new Date(year, month - 1, day);
+
   return d.toLocaleDateString("en-US", {
     year: "numeric",
     month: "long",
