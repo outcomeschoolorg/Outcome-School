@@ -67,7 +67,7 @@ import CompanyPolicies from "./Pages/CompanyPolicies";
 import OurPartners from "./Pages/OurPartners";
 import Workshops from "./Pages/Workshops";
 import StrategicAdvisoryCouncil from "./Pages/StrategicAdvisoryCouncil";
-import OutcomeSchool from "./Pages/OutcomeSchool";
+import Careersignal from "./Pages/careersignal";
 import CertificateList from "./Pages/Certificates";
 const App = () => {
   return (
@@ -198,7 +198,7 @@ const App = () => {
             path="/StrategicAdvisoryCouncil"
             element={<StrategicAdvisoryCouncil />}
           />
-          <Route path="/OutcomeSchool" element={<OutcomeSchool />} />
+          <Route path="/careersignal" element={<Careersignal />} />
           <Route path="/certifications" element={<CertificateList />}></Route>
         </Routes>
       </Router>
