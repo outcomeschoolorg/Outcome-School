@@ -253,8 +253,8 @@ const Home = () => {
           <iframe
             height="315"
             className="rounded-lg my-5 w-full max-w-3xl aspect-video"
-            src="https://www.youtube.com/embed/pq-69jczjtE?si=zqYxOjPz8Kq7K-eC"
-            title="UX/UI Student Meets an Industry Tech Expert at Outcome School"
+            src="https://www.youtube.com/embed/Q9iqYrtmOmo"
+            title="Outcome School Game Development Workshop for Los Angeles Kids"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen

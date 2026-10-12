@@ -125,10 +125,10 @@ const NavBar: React.FC = () => {
                   Workshops
                 </Link>
                 <Link
-                  to="/OutcomeSchool"
+                  to="/careersignal"
                   className="block px-4 py-2 bg-white hover:bg-gray-200 "
                 >
-                  The Outcome School
+                  Career Signal
                 </Link>
                 <Link
                   to="/certifications"
@@ -359,10 +359,10 @@ const NavBar: React.FC = () => {
                 Workshops
               </Link>
               <Link
-                to="/OutcomeSchool"
+                to="/careersignal"
                 className="block px-4 py-2 bg-white hover:bg-gray-200 "
               >
-                The Outcome School
+                Career Signal
               </Link>
               <Link
                 to="/certifications"
