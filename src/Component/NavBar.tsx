@@ -2,6 +2,8 @@ import { useState, useCallback } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import logo from "../assets/images/SSchool.svg";
 import { Link } from "react-router-dom";
+const buttonClasses =
+  "inline-block rounded-full border-2 border-[#6036E1] bg-[#6036E1] px-4 py-3 font-semibold text-white transition-all duration-200 hover:bg-white hover:text-[#6036E1] hover:shadow-2xl hover:shadow-[#6036E1]/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#6036E1] focus-visible:ring-offset-2";
 
 type DropdownMenu = "acquire" | "about" | "volunteer" | "employ" | null;
 
@@ -66,7 +68,6 @@ const NavBar: React.FC = () => {
         <a href="/" className="flex items-center">
           <img src={logo} alt="Logo" className=" logo rounded-lg" />
         </a>
-
         <div className="hidden md:flex space-x-6 text-center mx-auto items-center justify-center relative">
           {/* Services Dropdown - Desktop (Hover) */}
 
@@ -291,15 +292,14 @@ const NavBar: React.FC = () => {
             )}
           </div>
         </div>
-        <div className="float left hidden md:block">
-          <Link
-            to="/donate"
-            className="bg-[#6036E1] font-semibold border-2 border-[#6036E1] text-white rounded-[999px] hover:shadow-2xl hover:shadow-[#6036E1] px-4 py-3 hover:text-[#6036E1] hover:bg-white"
-          >
+        <div className="hidden items-center gap-3 md:flex">
+          <Link to="/donate" className={buttonClasses}>
             Donate
           </Link>
+          <a href="https://shop.outcomeschool.org/" className={buttonClasses}>
+            Shop
+          </a>
         </div>
-
         {/* Mobile menu button */}
         <button className="md:hidden text-black" onClick={toggleMenu}>
           {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
