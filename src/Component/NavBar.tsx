@@ -504,13 +504,21 @@ const NavBar: React.FC = () => {
             </div>
           )}
 
-          <Link
-            to="/donate"
-            className="block ml-5 mt-3 w-[20%] text-center font-semibold border-2 border-[#6036E1] text-white rounded-[999px] px-3 py-3 hover:text-[#6036E1] hover:bg-white mb-5 bg-[#6036E1]"
-            onClick={() => setIsOpen(false)}
-          >
-            Donate
-          </Link>
+          <div className="flex flex-col gap-3 px-6 pb-5 pt-3">
+            <Link
+              to="/donate"
+              className={`${buttonClasses} text-center`}
+              onClick={() => setIsOpen(false)}
+            >
+              Donate
+            </Link>
+            <a
+              href="https://shop.outcomeschool.org/"
+              className={`${buttonClasses} text-center`}
+            >
+              Shop
+            </a>
+          </div>
         </div>
       )}
     </nav>
