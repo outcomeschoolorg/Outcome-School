@@ -93,20 +93,20 @@ const ApplicationProcess = () => {
                 <p className="text-red-600 text-sm mt-2">Closed</p>
               </div>
               <div className="text-center">
-                <div className="bg-[#7D65ED] rounded-[10px] px-3 py-3 mx-auto">
-                  <p className="text-white text-[24px] font-regular">
+                <div className="border border-black rounded-[10px] px-3 py-3 mx-auto">
+                  <p className="text-black text-[24px] font-regular">
                     Fall 2026
                   </p>
                 </div>
-                <p className="text-black-600 text-sm mt-2">Open</p>
+                <p className="text-red-600 text-sm mt-2">Closed</p>
               </div>
               <div className="text-center">
-                <div className="border border-black rounded-[10px] px-3 py-3 mx-auto">
-                  <p className="text-black text-[24px] font-regular">
+                <div className="bg-[#7D65ED] rounded-[10px] px-3 py-3 mx-auto">
+                  <p className="text-white text-[24px] font-regular">
                     Winter 2026
                   </p>
                 </div>
-                <p className="text-red-600 text-sm mt-2">Closed</p>
+                <p className="text-black-600 text-sm mt-2">Open</p>
               </div>
               <div className="text-center">
                 <div className="border border-black rounded-[10px] px-3 py-3 mx-auto">
