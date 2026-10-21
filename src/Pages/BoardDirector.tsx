@@ -27,28 +27,12 @@ const DirectorsData: Director[] = [
     linkedinUrl: "https://www.linkedin.com/in/dondea/",
   },
   {
-    name: "Ramona J Smith",
-    img: RamonaJSmith,
-    title: "Entrepreneur",
-    description:
-      "serves as Board Treasurer of Outcome School, bringing a powerful blend of communication excellence, leadership, service, and community impact to the organization. As the 2018 Toastmasters International World Champion of Public Speaking, Ramona is globally recognized for her ability to inspire, educate, and connect with diverse audiences through clarity, confidence, and purpose. Her background spans public speaking, communication coaching, donor development, youth and family services, and military leadership, reflecting a deep commitment to empowerment, resilience, and transformational growth. At Outcome School, Ramona brings strategic insight, disciplined leadership, and a strong belief in helping people find their voice, overcome barriers, and reach their full potential.",
-    linkedinUrl: "https://www.linkedin.com/in/ramona-j-smith-61390743/",
-  },
-  {
     name: "Samson Akinola",
     img: Samson,
     title: "Outcome School’s Mission Servant",
     description:
       "serves as Board Secretary of Outcome School’s Board of Directors, bringing a deep passion for mentorship, youth empowerment, and creating equitable pathways into technology and entrepreneurship. Guided by Outcome School’s mission to empower underrepresented young people of color from less privileged backgrounds, Samson is committed to helping youth discover their hidden talents, build practical skills, and reach their full potential. His belief in skill-based empowerment was shaped during his time as a student in Europe, where he became inspired by Germany’s “Ausbildung” dual vocational training system, which combines classroom learning with hands-on workplace experience to prepare individuals for meaningful careers. With an M.B.A. from the University of Southern Indiana, Samson brings both strategic insight and a heart for service to his role, supporting Outcome School’s vision of creating opportunities, reducing future poverty, and building a more thriving, peaceful, and innovative society.",
     linkedinUrl: "https://www.linkedin.com/in/akinishuman/",
-  },
-  {
-    name: "Dr. Sharon Attipoe-Dorcoo",
-    img: Sharon,
-    title: "Senior Human-Centered Designer",
-    description:
-      "serves on Outcome School’s Board of Directors, bringing more than two decades of experience in strategy, research, evaluation, governance, and equity-driven innovation. As Principal of TERSHA LLC, she uses data storytelling, systems thinking, and human-centered design to help mission-aligned organizations strengthen impact and serve communities more effectively. Her career spans leadership and advisory work with the U.S. Department of Homeland Security, the Centers for Disease Control and Prevention, philanthropic networks, and civil society organizations. With expertise in culturally responsive design, developmental evaluation, language access, accessibility, community health, and workforce development, Dr. Sharon brings analytical rigor and a deep commitment to amplifying structurally underrepresented voices. At Outcome School, she supports the mission of empowering underrepresented young people through thoughtful governance, inclusive strategy, and a belief in creating pathways that help individuals and communities thrive. She holds a Ph.D. in Health Policy and an M.P.H. from the University of Texas School of Public Health.",
-    linkedinUrl: "https://www.linkedin.com/in/sharonattipoe-dorcoo/",
   },
   {
     name: "Angelica Tolentino",
