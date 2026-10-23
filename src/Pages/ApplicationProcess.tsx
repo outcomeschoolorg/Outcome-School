@@ -103,7 +103,7 @@ const ApplicationProcess = () => {
               <div className="text-center">
                 <div className="bg-[#7D65ED] rounded-[10px] px-3 py-3 mx-auto">
                   <p className="text-white text-[24px] font-regular">
-                    Winter 2026
+                    Winter 2027
                   </p>
                 </div>
                 <p className="text-black-600 text-sm mt-2">Open</p>
@@ -123,7 +123,7 @@ const ApplicationProcess = () => {
                 <img src={Summer} alt="clock" className="w-100 mb-4" />
               </div>
               <div className="mb-3">
-                <p className="text-start text-[32px] font-bold">Fall 2026</p>
+                <p className="text-start text-[32px] font-bold">Winter 2027</p>
                 <p className="text-[18px] my-3">
                   Application Deadline: 2 weeks before the program start date
                 </p>
@@ -134,7 +134,7 @@ const ApplicationProcess = () => {
                   Results Date: 3 days after your pre-work submission
                 </p>
                 <p className="text-[18px] my-3">
-                  Class date: October 5th, 2026 - December 23th, 2026
+                  Class date: January 5 2027 – March 26, 2027
                 </p>
               </div>
             </div>
